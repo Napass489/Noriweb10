@@ -1,31 +1,3889 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#FFF9F7">
-<title>Yai Nori | Vintage Camera Rental</title>
-<meta name="description" content="Yai Nori ร้านเช่ากล้องวินเทจ Digital Camera Rental — Canon IXY 30S, Canon IXUS 70 และ Sony Cyber-shot DSC-W830">
-<meta property="og:title" content="Yai Nori | Vintage Camera Rental">
-<meta property="og:description" content="กล้องวินเทจน่ารัก ให้เช่ารายครึ่งวัน รายวัน รายสัปดาห์ และรายเดือน">
-<meta property="og:image" content="/assets/banner-yai-nori.jpg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,500;1,600&family=Mitr:wght@300;400;500;600&family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./vendor/all.min.css">
-<script src="https://cdn.tailwindcss.com"></script>
-<style>html,body,#root{min-height:100%;margin:0}body{background:#FFF9F7;color:#765961;font-family:'Mitr','Prompt',sans-serif}#root>div{min-height:100vh}</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>รวมกลุ่มเครือAnnter</title>
+  <meta name="description" content="Annter Shop — รวมกลุ่มเครือ Annter เครือพาร์ทเนอร์ และช่องทางติดต่อ Annter Shop" />
+
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="รวมกลุ่มเครือAnnter — Annter Shop" />
+  <meta property="og:description" content="รวมกลุ่มเครือ Annter เครือพาร์ทเนอร์ และช่องทางติดต่อ Annter Shop ✨" />
+  <meta property="og:image" content="https://i.postimg.cc/PrkHY9J5/att-FXAESa-Ylg-GKX1o-Mf-RWXBx5Z5wt3-k-Jbr4P0b-XQHRHY8.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="รวมกลุ่มเครือAnnter — Annter Shop" />
+  <meta name="twitter:description" content="รวมกลุ่มเครือ Annter เครือพาร์ทเนอร์ และช่องทางติดต่อ Annter Shop ✨" />
+  <meta name="twitter:image" content="https://i.postimg.cc/PrkHY9J5/att-FXAESa-Ylg-GKX1o-Mf-RWXBx5Z5wt3-k-Jbr4P0b-XQHRHY8.jpg" />
+
+  <!-- Google Fonts: Thai typography & sample fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Itim&family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Mali:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Prompt:wght@300;400;500;600;700&family=Sriracha&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            hippo: {
+              bg: '#F4FBF7',        // Soft pastel mint-green background matching logo
+              pill: '#D5F2E3',      // Accent soft mint for active tabs/pills
+              pillBorder: '#B5E4CC',
+              navy: '#1D4636',      // Deep forest green for text and iconography
+              navyMuted: '#4C7563', // Muted sage green for descriptions
+              btn: '#387B5E',       // Primary action button tone
+              btnHover: '#296048',
+              cardBorder: '#D4EDE0',// Card border hue
+              softBlue: '#E7F7EE'
+            }
+          },
+          fontFamily: {
+            sans: ['Prompt', 'Kanit', 'sans-serif'],
+            rounded: ['Mali', 'Itim', 'sans-serif'],
+            strawberry: ['Mali', 'sans-serif'],
+            lavender: ['Charm', 'Sriracha', 'serif'],
+            creampuff: ['Itim', 'Kanit', 'sans-serif']
+          },
+          boxShadow: {
+            'hippo-card': '0 6px 20px -4px rgba(29, 70, 54, 0.06), 0 2px 6px -1px rgba(29, 70, 54, 0.03)',
+            'hippo-nav': '0 -4px 20px rgba(29, 70, 54, 0.06)',
+            'hippo-btn': '0 4px 12px rgba(56, 123, 94, 0.22)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Base layout safeguards & color harmony */
+    html, body {
+      background-color: #E8F6EE;
+      color: #1D4636;
+      font-family: 'Prompt', sans-serif;
+      overflow-x: hidden;
+      -webkit-tap-highlight-color: transparent;
+      scroll-behavior: smooth;
+    }
+
+    /* Hide scrollbars for smooth swipeable containers */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    /* Tab switch transition animation */
+    @keyframes fadeInSlide {
+      from {
+        opacity: 0;
+        transform: translateY(6px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .tab-animate {
+      animation: fadeInSlide 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    /* Gentle floating animation for the mascot */
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-4px); }
+    }
+    .hippo-float {
+      animation: floatSlow 3.8s ease-in-out infinite;
+    }
+
+    @media (max-width: 340px) {
+      .f-sale-grid {
+        grid-template-columns: 1fr !important;
+      }
+    }
+
+    /* Safe Area padding for bezel-less mobile screens */
+    .pb-safe-nav {
+      padding-bottom: calc(5.75rem + env(safe-area-inset-bottom, 0px));
+    }
+    .bottom-nav-safe {
+      padding-bottom: calc(0.5rem + env(safe-area-inset-bottom, 0px));
+    }
+
+    /* Vinyl record rotation & floating music notes */
+    @keyframes spinDisc {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .disc-spinning {
+      animation: spinDisc 6.5s linear infinite;
+    }
+    .disc-paused {
+      animation-play-state: paused !important;
+    }
+
+    @keyframes floatMusicNote {
+      0% {
+        opacity: 0;
+        transform: translate(0, 6px) scale(0.75) rotate(-10deg);
+      }
+      25% {
+        opacity: 0.95;
+      }
+      100% {
+        opacity: 0;
+        transform: translate(var(--tx, -12px), -34px) scale(1.15) rotate(16deg);
+      }
+    }
+    .music-note-particle {
+      position: absolute;
+      pointer-events: none;
+      font-size: 12px;
+      font-weight: 700;
+      color: #387B5E;
+      text-shadow: 0 1px 2px rgba(255,255,255,0.9);
+      animation: floatMusicNote 2.4s ease-out infinite;
+    }
+
+    .nh-intro {
+      box-sizing: border-box;
+      border: 0;
+      padding: 0;
+      color: #1D4636;
+      text-align: center;
+    }
+    .nh-intro[open] { display: grid; place-items: center; }
+    .nh-intro::backdrop { background: rgb(29 70 54 / 28%); }
+    #nh-loading-dialog {
+      position: fixed;
+      inset: 0;
+      margin: 0;
+      width: 100vw;
+      height: 100vh;
+      height: 100dvh;
+      max-width: none;
+      max-height: none;
+      border-radius: 0;
+      overflow: auto;
+      background: linear-gradient(160deg, #D5F2E3, #F4FBF7 70%);
+      transition: opacity .22s ease;
+    }
+    #nh-loading-dialog::backdrop { background: transparent; }
+    .nh-intro.is-fading { opacity: 0; }
+    #nh-welcome-dialog {
+      position: fixed;
+      inset: 0;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      max-width: none;
+      max-height: none;
+      background: transparent;
+      overflow: hidden;
+    }
+    #nh-welcome-dialog::backdrop { background: rgb(244 251 247 / 82%); }
+    #nh-welcome-dialog .nh-welcome-panel {
+      width: min(550px, calc(100% - 32px));
+      max-height: calc(100% - 32px);
+      overflow: auto;
+      border-radius: 24px;
+      border: 1px solid #B5E4CC;
+      background: #FFF;
+      box-shadow: 0 12px 38px rgb(56 123 94 / 12%);
+    }
+    .nh-intro-panel { box-sizing: border-box; position: relative; width: 100%; padding: 32px 24px; }
+    .nh-logo-ripple {
+      position: relative;
+      isolation: isolate;
+      width: 124px;
+      height: 124px;
+      margin: 0 auto 9px;
+    }
+    .nh-logo-ripple::before, .nh-logo-ripple::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border: 2px solid #74C69D;
+      border-radius: 50%;
+      z-index: -1;
+      opacity: 0;
+      animation: nh-logo-ripple 1.35s ease-out infinite;
+    }
+    .nh-logo-ripple::after { animation-delay: .38s; }
+    @keyframes nh-logo-ripple {
+      0% { opacity: .6; transform: scale(1); }
+      100% { opacity: 0; transform: scale(1.36); }
+    }
+    .nh-intro-logo {
+      display: block;
+      width: 124px;
+      height: 124px;
+      margin: 0;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .nh-intro-logo[hidden], #nh-progress-mascot[hidden], .nh-welcome-nav[hidden] { display: none; }
+    .nh-intro-name { margin-bottom: 4px; font-size: 22px; font-weight: 700; }
+    .nh-progress {
+      --nh-progress: 0%;
+      position: relative;
+      width: min(300px, calc(100% - 52px));
+      margin: 54px auto 0;
+    }
+    .nh-progress-track {
+      height: 12px;
+      border-radius: 999px;
+      background: #D4EDE0;
+      overflow: hidden;
+    }
+    .nh-progress-fill {
+      width: var(--nh-progress);
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, #74C69D, #387B5E);
+    }
+    #nh-progress-mascot {
+      position: absolute;
+      left: var(--nh-progress);
+      bottom: calc(100% + 3px);
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+      transform: translateX(-50%);
+    }
+    .nh-progress-label {
+      display: block;
+      margin-top: 8px;
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+    }
+    .nh-welcome-panel { padding: 28px clamp(16px, 5vw, 30px); }
+    .nh-welcome-heading {
+      margin: 0 22px 12px;
+      color: #296048;
+      font-size: clamp(18px, 4vw, 22px);
+      font-weight: 700;
+      overflow-wrap: anywhere;
+    }
+    .nh-welcome-heading[hidden] { display: none; }
+    #nh-welcome-dialog #nh-intro-enter {
+      width: 100%;
+      background: linear-gradient(100deg, #387B5E, #52997A);
+    }
+    #nh-welcome-content { max-height: 46vh; max-height: 46dvh; overflow: auto; }
+    .nh-welcome-text { font-size: 15px; line-height: 1.65; white-space: pre-wrap; overflow-wrap: anywhere; }
+    .nh-welcome-images { display: grid; gap: 10px; }
+    .nh-welcome-images:not(:empty) { margin-top: 12px; }
+    .nh-welcome-images img { display: block; width: 100%; height: auto; border-radius: 14px; }
+    .nh-welcome-nav { display: flex; align-items: center; justify-content: center; gap: 14px; margin-top: 12px; }
+    .nh-welcome-nav button { min-width: 44px; min-height: 44px; border: 1px solid #B5E4CC; border-radius: 999px; }
+    .nh-welcome-nav button:disabled { opacity: .38; }
+    .nh-intro-enter {
+      margin-top: 16px;
+      min-height: 44px;
+      padding: 8px 24px;
+      border-radius: 999px;
+      background: #387B5E;
+      color: white;
+      font-weight: 600;
+    }
+    .nh-intro-close {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      font-size: 24px;
+    }
+    .nh-intro-enter:focus-visible, .nh-intro-close:focus-visible {
+      outline: 2px solid #1D4636;
+      outline-offset: 3px;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .nh-intro, .nh-intro *, .nh-intro::backdrop, .nh-logo-ripple::before, .nh-logo-ripple::after {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
 </head>
-<body>
-<div id="root"><p style="text-align:center;margin:28vh auto;font-family:Mitr,sans-serif;color:#765961">กำลังเปิดเว็บไซต์ Yai Nori… ♡</p></div>
-<!-- React 18 UMD: useState/useEffect hooks (React 16 is not supported) -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
-<script>if(!window.React||typeof React.useState!=="function")document.write('<script src="https://cdn.jsdelivr.net/npm/react@18.3.1/umd/react.production.min.js"><\/script>');</script>
-<script>if(!window.React||typeof React.useState!=="function")document.write('<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"><\/script>');</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
-<script>if(!window.ReactDOM||typeof ReactDOM.createRoot!=="function")document.write('<script src="https://cdn.jsdelivr.net/npm/react-dom@18.3.1/umd/react-dom.production.min.js"><\/script>');</script>
-<script>if(!window.ReactDOM||typeof ReactDOM.createRoot!=="function")document.write('<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"><\/script>');</script>
-<script src="./vendor/icons.js"></script>
-<script src="./vendor/app.js"></script>
+<body class="min-h-screen flex flex-col items-center justify-start selection:bg-hippo-pill selection:text-hippo-navy">
+
+  <dialog id="nh-loading-dialog" class="nh-intro" aria-label="กำลังโหลดเว็บไซต์">
+    <div class="nh-intro-panel" id="nh-intro-loading">
+      <div class="nh-logo-ripple">
+        <img id="nh-intro-logo" class="nh-intro-logo" src="https://i.postimg.cc/PrkHY9J5/att-FXAESa-Ylg-GKX1o-Mf-RWXBx5Z5wt3-k-Jbr4P0b-XQHRHY8.jpg" alt="" onerror="this.hidden=true">
+      </div>
+      <p id="nh-intro-brand" class="nh-intro-name">Annter Shop</p>
+      <div class="nh-progress" id="nh-progress">
+        <img id="nh-progress-mascot" src="https://i.postimg.cc/cJhF26G6/mi-m-ch-x-63-20261118141219.png" alt="" onerror="this.hidden=true">
+        <div id="nh-progress-track" class="nh-progress-track" role="progressbar" aria-label="ความคืบหน้าในการเปิดร้าน" aria-valuenow="0">
+          <div class="nh-progress-fill"></div>
+        </div>
+        <span id="nh-progress-label" class="nh-progress-label" aria-hidden="true">0%</span>
+      </div>
+    </div>
+  </dialog>
+  <dialog id="nh-welcome-dialog" class="nh-intro" aria-labelledby="nh-intro-welcome-title">
+    <div class="nh-intro-panel nh-welcome-panel">
+      <form method="dialog">
+        <button class="nh-intro-close" type="submit" aria-label="ปิดป๊อปอัป">×</button>
+        <span id="nh-intro-welcome-title" class="sr-only">ป๊อปอัปต้อนรับ Annter Shop</span>
+        <h2 id="nh-welcome-heading" class="nh-welcome-heading" hidden></h2>
+        <div id="nh-welcome-content" aria-live="polite">
+          <p id="nh-welcome-text" class="nh-welcome-text" hidden></p>
+          <div id="nh-welcome-images" class="nh-welcome-images"></div>
+        </div>
+        <div id="nh-welcome-nav" class="nh-welcome-nav" hidden>
+          <button id="nh-welcome-prev" type="button" aria-label="หน้าก่อนหน้า">‹</button>
+          <span id="nh-welcome-count" aria-live="polite"></span>
+          <button id="nh-welcome-next" type="button" aria-label="หน้าถัดไป">›</button>
+        </div>
+        <button id="nh-intro-enter" class="nh-intro-enter" type="submit">รับทราบ🦖</button>
+      </form>
+    </div>
+  </dialog>
+  <script>
+    (() => {
+      const loadingDialog = document.getElementById('nh-loading-dialog');
+      const welcomeDialog = document.getElementById('nh-welcome-dialog');
+      if (typeof loadingDialog.showModal !== 'function') return;
+
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const previousOverflow = document.body.style.overflow;
+      const progress = document.getElementById('nh-progress');
+      const track = document.getElementById('nh-progress-track');
+      const label = document.getElementById('nh-progress-label');
+      const startedAt = performance.now();
+      let readyAt = null;
+      let pages = [];
+      let pageIndex = 0;
+      let progressValue = 0;
+      let readyProgress = 0;
+
+      loadingDialog.showModal();
+      document.body.style.overflow = 'hidden';
+      loadingDialog.addEventListener('cancel', event => event.preventDefault());
+      welcomeDialog.addEventListener('close', () => {
+        document.body.style.overflow = previousOverflow;
+      });
+
+      const heading = document.getElementById('nh-welcome-heading');
+      const welcomeText = document.getElementById('nh-welcome-text');
+      const welcomeImages = document.getElementById('nh-welcome-images');
+      const prev = document.getElementById('nh-welcome-prev');
+      const next = document.getElementById('nh-welcome-next');
+
+      function showWelcomePage() {
+        const page = pages[pageIndex];
+        heading.textContent = page.title || '';
+        heading.hidden = !page.title;
+        welcomeText.textContent = page.text;
+        welcomeText.hidden = !page.text;
+        welcomeImages.replaceChildren(...page.images.map((url, index) => {
+          const image = document.createElement('img');
+          image.alt = 'รูปต้อนรับ ' + (index + 1);
+          image.src = url;
+          return image;
+        }));
+        document.getElementById('nh-welcome-nav').hidden = pages.length < 2;
+        document.getElementById('nh-welcome-count').textContent = (pageIndex + 1) + ' / ' + pages.length;
+        prev.disabled = pageIndex === 0;
+        next.disabled = pageIndex === pages.length - 1;
+        document.getElementById('nh-welcome-content').scrollTop = 0;
+      }
+
+      prev.addEventListener('click', () => {
+        pageIndex -= 1;
+        showWelcomePage();
+      });
+      next.addEventListener('click', () => {
+        pageIndex += 1;
+        showWelcomePage();
+      });
+
+      function finishLoading() {
+        const welcomeKey = 'anntershop.welcome.seen';
+        let alreadySeen = false;
+        try { alreadySeen = sessionStorage.getItem(welcomeKey) === '1'; } catch {}
+        loadingDialog.close();
+        if (alreadySeen || pages.length === 0) {
+          document.body.style.overflow = previousOverflow;
+          return;
+        }
+
+        showWelcomePage();
+        welcomeDialog.showModal();
+        try { sessionStorage.setItem(welcomeKey, '1'); } catch {}
+        document.getElementById('nh-intro-enter').focus({ preventScroll: true });
+      }
+
+      function updateProgress(now) {
+        const elapsed = now - startedAt;
+        if (readyAt === null) {
+          progressValue = Math.min(90, Math.floor(elapsed / 12));
+        } else {
+          const completion = reducedMotion ? 1 : Math.min(1, Math.max(0, (now - readyAt) / 420));
+          progressValue = Math.round(readyProgress + (100 - readyProgress) * completion);
+        }
+
+        progress.style.setProperty('--nh-progress', progressValue + '%');
+        label.textContent = progressValue + '%';
+        track.setAttribute('aria-valuenow', progressValue);
+        if (progressValue < 100) {
+          requestAnimationFrame(updateProgress);
+          return;
+        }
+
+        window.setTimeout(() => {
+          loadingDialog.classList.add('is-fading');
+          window.setTimeout(finishLoading, reducedMotion ? 0 : 220);
+        }, reducedMotion ? 0 : 180);
+      }
+
+      function markReady(configuredPages) {
+        pages = configuredPages || pages;
+        if (readyAt !== null) return;
+        readyAt = Math.max(performance.now(), startedAt + (reducedMotion ? 0 : 420));
+        readyProgress = progressValue;
+      }
+
+      const fallback = window.setTimeout(markReady, 4500);
+      document.addEventListener('anntershop:ready', event => {
+        window.clearTimeout(fallback);
+        markReady(event.detail);
+      }, { once: true });
+      requestAnimationFrame(updateProgress);
+    })();
+  </script>
+
+  <!-- =====================================================================
+       MAIN APP CONTAINER: Centered mobile viewport on desktop/tablet
+  ====================================================================== -->
+  <div class="w-full max-w-[520px] min-h-screen bg-hippo-bg shadow-xl relative flex flex-col overflow-x-hidden border-x border-hippo-cardBorder/70">
+
+    <!-- Admin Status Bar (Toggled via the logo avatar) -->
+    <div id="admin-statusbar" class="hidden bg-hippo-navy text-white px-3.5 py-2 text-xs items-center justify-between gap-2 flex-wrap z-40 sticky top-0 shadow-md">
+      <div class="flex items-center gap-1.5 font-semibold">
+        <span class="w-2 h-2 rounded-full bg-[#8CE99A] animate-pulse"></span>
+        <span>โหมดแอดมิน: แก้ไข เพิ่ม หรือลบข้อมูลในแต่ละหน้าได้โดยตรง</span>
+      </div>
+      <div class="flex flex-wrap items-center gap-1.5">
+        <button type="button" onclick="openWelcomeAdminModal()" class="px-2.5 py-1 rounded-full bg-white/15 hover:bg-white/25 text-[11px] font-medium transition">ป๊อปอัปต้อนรับ</button>
+        <button
+          type="button"
+          onclick="resetSiteDataToDefault()"
+          class="px-2.5 py-1 rounded-full bg-white/15 hover:bg-white/25 text-[11px] font-medium transition"
+        >
+          รีเซ็ตค่าเริ่มต้น
+        </button>
+        <button
+          type="button"
+          onclick="toggleAdminMode(false)"
+          class="px-2.5 py-1 rounded-full bg-[#FF8787] hover:bg-[#FA5252] text-white text-[11px] font-bold transition"
+        >
+          ปิดโหมดแอดมิน
+        </button>
+      </div>
+    </div>
+
+    <!-- ===============================================================
+         TOP HEADER PILL CARD
+    ================================================================ -->
+    <header class="pt-3.5 pb-2 px-3.5 bg-gradient-to-b from-[#D5F2E3] to-hippo-bg relative z-30">
+      <div class="top-brand-card bg-white/95 backdrop-blur-md rounded-[28px] p-2.5 sm:p-3 border border-hippo-cardBorder shadow-hippo-card flex items-center justify-between gap-2.5 relative">
+        <!-- Left: Logo Avatar (Tap to toggle admin mode) -->
+        <div
+          onclick="toggleAdminMode()"
+          role="button"
+          tabindex="0"
+          onkeydown="if(event.key==='Enter') toggleAdminMode()"
+          title="แตะโลโก้เพื่อเปิด/ปิดโหมดแอดมิน"
+          aria-label="Tap logo to enter admin mode"
+          class="top-brand-avatar-wrap relative flex-shrink-0 cursor-pointer group select-none"
+        >
+          <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full p-1 bg-gradient-to-tr from-[#B5E4CC] to-[#E7F7EE] shadow-xs">
+            <img
+              id="header-logo-img"
+              src="https://i.postimg.cc/PrkHY9J5/att-FXAESa-Ylg-GKX1o-Mf-RWXBx5Z5wt3-k-Jbr4P0b-XQHRHY8.jpg"
+              alt="Annter Shop Logo"
+              class="w-full h-full rounded-full object-cover bg-white border border-white group-hover:scale-[1.03] transition-transform"
+              onerror="this.onerror=null;this.src='https://placehold.co/150x150/D5F2E3/1D4636?text=Annter';"
+            />
+          </div>
+          <span id="admin-badge-indicator" class="absolute -bottom-0.5 -right-0.5 w-6 h-6 rounded-full bg-hippo-btn text-white border-2 border-white flex items-center justify-center shadow-xs transition-colors">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+              <path d="M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z"/>
+            </svg>
+          </span>
+        </div>
+
+        <!-- Center: Brand Name & Subtitle -->
+        <div class="flex-1 min-w-0 pl-0.5">
+          <div class="flex items-center gap-1.5 flex-wrap">
+            <h1 id="header-brand-name" class="font-rounded font-bold text-[21px] sm:text-[23px] text-hippo-navy leading-none tracking-tight">
+              Annter Shop
+            </h1>
+            <span id="header-brand-badge" class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-hippo-pill text-hippo-btn border border-hippo-pillBorder leading-tight">
+              Official
+            </span>
+            <button
+              type="button"
+              onclick="openHeaderAdminModal()"
+              class="admin-only-btn hidden text-[10px] font-bold bg-amber-100 hover:bg-amber-200 text-amber-900 border border-amber-300 px-2 py-0.5 rounded-full transition"
+            >
+              ✏️ แก้หัวเว็บ/เพลง
+            </button>
+          </div>
+          <p id="header-brand-subtitle" class="text-[12px] sm:text-[12.5px] text-hippo-navyMuted font-medium truncate mt-1">
+            รวมกลุ่มเครือ Annter สติ๊กเกอร์ ของตกแต่ง &amp; ฟอนต์น่ารัก ✨
+          </p>
+        </div>
+
+        <!-- Right: Vinyl Record Music Player Button -->
+        <div class="relative flex-shrink-0">
+          <div id="music-notes-layer" class="hidden absolute -inset-2 pointer-events-none z-20">
+            <span class="music-note-particle" style="left: -4px; top: 4px; --tx: -14px; animation-delay: 0s;">♪</span>
+            <span class="music-note-particle" style="right: -4px; top: 0px; --tx: 14px; animation-delay: 0.7s;">♫</span>
+            <span class="music-note-particle" style="left: 14px; top: -6px; --tx: -6px; animation-delay: 1.4s;">♬</span>
+            <span class="music-note-particle" style="right: 10px; top: 8px; --tx: 10px; animation-delay: 1.9s;">✦</span>
+          </div>
+
+          <button
+            type="button"
+            onclick="toggleMusicPopover()"
+            aria-label="Open Music Player & Playlist"
+            class="relative w-12 h-12 sm:w-13 sm:h-13 rounded-full p-[3px] bg-gradient-to-tr from-[#8ED1B0] via-[#D5F2E3] to-[#A9DEC4] border border-white shadow-md hover:scale-105 active:scale-95 transition flex items-center justify-center group"
+          >
+            <div
+              id="music-disc-graphic"
+              class="w-full h-full rounded-full overflow-hidden relative border border-white/80 disc-spinning disc-paused"
+            >
+              <img
+                id="music-disc-img"
+                src="https://i.postimg.cc/PrkHY9J5/att-FXAESa-Ylg-GKX1o-Mf-RWXBx5Z5wt3-k-Jbr4P0b-XQHRHY8.jpg"
+                alt="Music Disc"
+                class="w-full h-full object-cover"
+                onerror="this.onerror=null;this.src='https://placehold.co/120x120/D5F2E3/1D4636?text=Music';"
+              />
+              <div class="absolute inset-0 bg-gradient-to-tr from-transparent via-white/20 to-transparent pointer-events-none"></div>
+              <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3.5 h-3.5 rounded-full bg-hippo-bg border-2 border-[#6EB894] shadow-inner"></div>
+            </div>
+
+            <span
+              id="music-status-dot"
+              class="absolute -bottom-0.5 -right-0.5 w-5 h-5 rounded-full bg-hippo-pill text-hippo-navy border border-white flex items-center justify-center text-[10px] font-bold shadow-2xs"
+            >
+              ♪
+            </span>
+          </button>
+
+          <!-- Music Player Popover -->
+          <div
+            id="music-popover"
+            class="hidden absolute right-0 mt-2.5 w-64 bg-white/98 backdrop-blur-md rounded-[22px] border-2 border-hippo-pill shadow-2xl p-3.5 z-50 space-y-2.5"
+          >
+            <div class="flex items-center justify-between gap-1.5 border-b border-hippo-cardBorder pb-2">
+              <div class="min-w-0 flex-1">
+                <div class="text-[10.5px] font-bold text-hippo-btn uppercase tracking-wider flex items-center gap-1">
+                  <span>🎵 แผ่นเสียงร้าน Annter Shop</span>
+                </div>
+                <div id="music-current-title" class="text-xs font-bold text-hippo-navy truncate mt-0.5">
+                  1. Annter Pastel Music Box
+                </div>
+              </div>
+              <button
+                type="button"
+                id="music-play-toggle-btn"
+                onclick="toggleMusicPlayback()"
+                class="px-2.5 py-1.5 rounded-full bg-hippo-btn hover:bg-hippo-btnHover text-white text-[11px] font-bold flex items-center gap-1 shadow-2xs transition flex-shrink-0"
+              >
+                <span id="music-play-btn-text">▶ เล่น</span>
+              </button>
+              <button
+                type="button"
+                onclick="toggleMusicPopover(false)"
+                aria-label="ปิดหน้าต่างเลือกเพลง"
+                class="w-7 h-7 rounded-full bg-hippo-bg hover:bg-hippo-pill text-hippo-navy flex items-center justify-center text-xs font-bold transition flex-shrink-0 border border-hippo-cardBorder"
+              >
+                ✕
+              </button>
+            </div>
+
+            <div class="text-[11px] font-semibold text-hippo-navyMuted">เลือกเปลี่ยนเพลง:</div>
+            <div id="music-track-list" class="space-y-1 max-h-40 overflow-y-auto pr-0.5"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ======================== MAIN TABS CONTENT AREA ======================== -->
+    <main id="app-content" class="flex-1 w-full pb-safe-nav">
+
+      <!-- ===============================================================
+           TAB 1: HOME
+      ================================================================ -->
+      <section id="tab-home" class="tab-panel tab-animate">
+        <div class="px-4 pt-2 pb-6 space-y-4">
+          <!-- 1. Swipeable Carousel Banners -->
+          <div aria-label="Promotional Banners" class="relative">
+            <div class="admin-only-btn hidden mb-2 flex justify-end">
+              <button
+                type="button"
+                onclick="openBannerAdminModal(-1)"
+                class="text-xs font-bold bg-amber-100 hover:bg-amber-200 text-amber-900 border border-amber-300 px-3 py-1 rounded-full transition"
+              >
+                + เพิ่มแบนเนอร์
+              </button>
+            </div>
+            <div id="banner-track" class="flex gap-3 overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar pr-[14%]"></div>
+            <div id="banner-dots" class="flex justify-center items-center gap-2 mt-2.5"></div>
+          </div>
+
+          <!-- 2. Contact Channels Section -->
+          <section aria-label="ช่องทางการติดต่อ" class="space-y-2">
+            <div class="admin-only-btn hidden flex justify-end">
+              <button
+                type="button"
+                onclick="openContactAdminModal(-1)"
+                class="text-[11px] font-bold bg-amber-100 hover:bg-amber-200 text-amber-900 border border-amber-300 px-3 py-1 rounded-full shadow-2xs transition"
+              >
+                + เพิ่มปุ่มติดต่อ
+              </button>
+            </div>
+            <div id="contact-grid" class="grid grid-cols-3 gap-2"></div>
+          </section>
+
+          <!-- 3. Payment Bank Account Section -->
+          <section aria-label="ช่องทางการโอนเงิน" class="space-y-2">
+            <div class="admin-only-btn hidden flex justify-end">
+              <button
+                type="button"
+                onclick="openBankAdminModal(-1)"
+                class="text-[11px] font-bold bg-amber-100 hover:bg-amber-200 text-amber-900 border border-amber-300 px-3 py-1 rounded-full shadow-2xs transition"
+              >
+                + เพิ่มบัญชี/วอเลต
+              </button>
+            </div>
+
+            <div class="flex items-center justify-between gap-3 px-1 pt-0.5">
+              <button
+                type="button"
+                onclick="openBankModal()"
+                class="flex-1 bg-hippo-btn hover:bg-hippo-btnHover active:scale-[0.99] transition-all text-white font-semibold text-[16px] py-3 px-5 rounded-full shadow-hippo-btn flex items-center justify-center gap-2"
+              >
+                <span>ดูข้อมูลบัญชี &amp; วอเลต</span>
+                <svg class="w-4 h-4 stroke-[2.5]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                </svg>
+              </button>
+
+              <!-- มาสคอตข้างปุ่มช่องทางการโอนเงิน เปลี่ยนเป็นรูปที่ลูกค้าระบุ -->
+              <div
+                onclick="showToast('Annter Shop ยินดีต้อนรับค่ะ! 🦖')"
+                title="มาสคอตประจำร้าน Annter Shop"
+                class="w-20 h-16 flex-shrink-0 flex items-center justify-center select-none hippo-float cursor-pointer group relative"
+                aria-hidden="true"
+              >
+                <div class="w-16 h-16 group-hover:scale-110 group-active:scale-95 transition-transform duration-300 flex items-center justify-center">
+                  <img
+                    src="https://i.postimg.cc/bJJx6mvr/IMG-3604.png"
+                    alt="Mascot Annter Shop"
+                    class="w-full h-full object-contain group-hover:rotate-6 transition-transform duration-300"
+                    onerror="this.onerror=null;this.src='https://placehold.co/120x120/D5F2E3/1D4636?text=Annter';"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 4. Other 1:1 Link Cards (2 Columns) -->
+          <section aria-label="Additional Links" class="pt-1 space-y-2.5">
+            <div class="admin-only-btn hidden flex justify-end">
+              <button
+                type="button"
+                onclick="openOtherLinkAdminModal(-1)"
+                class="text-xs font-bold bg-amber-100 hover:bg-amber-200 text-amber-900 border border-amber-300 px-3 py-1 rounded-full transition"
+              >
+                + เพิ่มปุ่มรูป 1:1
+              </button>
+            </div>
+            <div id="other-links-grid" class="other-links-list grid grid-cols-2 gap-3.5"></div>
+          </section>
+        </div>
+      </section>
+
+      <!-- ===============================================================
+           TAB 2: GROUPS
+      ================================================================ -->
+      <section id="tab-groups" class="tab-panel hidden">
+        <!-- มุมมองที่ 1: รายการกลุ่มทั้งหมด -->
+        <div id="groups-main-view">
+          <div class="px-4 pt-2 pb-1">
+            <div class="bg-hippo-pill rounded-full px-4 py-2 border border-hippo-pillBorder/60 flex items-center justify-center gap-2 text-center relative">
+              <svg class="w-5 h-5 text-hippo-navy stroke-[2.2]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/>
+              </svg>
+              <h2 class="text-[18px] font-bold text-hippo-navy tracking-wide">เครือAnnter</h2>
+              <button
+                type="button"
+                onclick="openGroupAdminModal(-1)"
+                class="admin-only-btn hidden absolute right-2.5 text-xs font-bold bg-amber-100 hover:bg-amber-200 text-amber-900 border border-amber-300 px-2.5 py-0.5 rounded-full"
+              >
+                + เพิ่มกลุ่ม
+              </button>
+            </div>
+          </div>
+
+          <div id="groups-list" class="px-4 pt-3 pb-6 space-y-4"></div>
+        </div>
+
+        <!-- มุมมองที่ 2: หน้าแสดงรายการย่อยของกลุ่ม -->
+        <div id="groups-detail-view" class="hidden tab-animate">
+          <div class="px-4 pt-2 pb-1">
+            <div class="bg-hippo-pill rounded-full px-3 py-2 border border-hippo-pillBorder/60 flex items-center justify-between gap-2">
+              <button
+                type="button"
+                onclick="closeGroupDetailPage()"
+                class="inline-flex items-center gap-1 bg-white hover:bg-hippo-softBlue text-hippo-navy font-bold text-xs px-3 py-1.5 rounded-full border border-hippo-cardBorder shadow-2xs transition active:scale-95"
+              >
+                <svg class="w-3.5 h-3.5 stroke-[2.5]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+                </svg>
+                <span>กลับหน้ากลุ่ม</span>
+              </button>
+              <h2 id="group-subitems-title" class="text-[15.5px] sm:text-[17px] font-bold text-hippo-navy truncate text-center flex-1">
+                ชื่อกลุ่ม
+              </h2>
+              <button
+                type="button"
+                id="add-subitem-admin-btn"
+                onclick="openSubItemAdminModal(activeGroupModalIndex, -1)"
+                class="admin-only-btn hidden text-[11px] font-bold bg-amber-100 hover:bg-amber-200 text-amber-900 border border-amber-300 px-2.5 py-1 rounded-full flex-shrink-0"
+              >
+                + เพิ่มงานย่อย
+              </button>
+            </div>
+          </div>
+
+          <div class="px-4 pt-3 pb-6 space-y-3.5">
+            <div id="group-subitems-list" class="space-y-3"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===============================================================
+           TAB 3: PARTNER NETWORKS
+      ================================================================ -->
+      <section id="tab-fsale" class="tab-panel hidden">
+        <!-- มุมมองที่ 1: รายการกลุ่มทั้งหมด -->
+        <div id="partners-main-view">
+          <div class="px-4 pt-2 pb-1">
+            <div class="bg-hippo-pill rounded-full px-4 py-2 border border-hippo-pillBorder/60 flex items-center justify-center gap-2 text-center relative">
+              <svg class="w-5 h-5 text-hippo-navy stroke-[2.2]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/>
+              </svg>
+              <h2 class="text-[18px] font-bold text-hippo-navy tracking-wide">เครือพาร์ทเนอร์</h2>
+              <button
+                type="button"
+                onclick="openGroupAdminModal(-1, true)"
+                class="admin-only-btn hidden absolute right-2.5 text-[10px] sm:text-xs font-bold bg-amber-100 hover:bg-amber-200 text-amber-900 border border-amber-300 px-2 py-0.5 rounded-full"
+              >
+                + เพิ่มเครือ
+              </button>
+            </div>
+          </div>
+
+          <div id="partners-list" class="px-4 pt-3 pb-6 space-y-4"></div>
+        </div>
+
+        <!-- มุมมองที่ 2: หน้าแสดงรายการย่อยของกลุ่ม -->
+        <div id="partners-detail-view" class="hidden tab-animate">
+          <div class="px-4 pt-2 pb-1">
+            <div class="bg-hippo-pill rounded-full px-3 py-2 border border-hippo-pillBorder/60 flex items-center justify-between gap-2">
+              <button
+                type="button"
+                onclick="closeGroupDetailPage(true)"
+                class="inline-flex items-center gap-1 bg-white hover:bg-hippo-softBlue text-hippo-navy font-bold text-xs px-3 py-1.5 rounded-full border border-hippo-cardBorder shadow-2xs transition active:scale-95"
+              >
+                <svg class="w-3.5 h-3.5 stroke-[2.5]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+                </svg>
+                <span>กลับหน้าเครือ</span>
+              </button>
+              <h2 id="partner-categories-title" class="text-[15.5px] sm:text-[17px] font-bold text-hippo-navy truncate text-center flex-1">
+                ชื่อกลุ่ม
+              </h2>
+              <button
+                type="button"
+                id="add-partner-category-btn"
+                onclick="openPartnerCategoryAdminModal(-1)"
+                class="admin-only-btn hidden text-[11px] font-bold bg-amber-100 hover:bg-amber-200 text-amber-900 border border-amber-300 px-2.5 py-1 rounded-full flex-shrink-0"
+              >
+                + เพิ่มหมวดหมู่
+              </button>
+            </div>
+          </div>
+
+          <div class="px-4 pt-3 pb-6 space-y-3.5">
+            <div id="partner-categories-list" class="space-y-3"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===============================================================
+           TAB 4: FONTS
+      ================================================================ -->
+      <section id="tab-fonts" class="tab-panel hidden">
+        <div class="px-4 pt-2 pb-1">
+          <div class="bg-hippo-pill rounded-full px-4 py-2 border border-hippo-pillBorder/60 flex items-center justify-center gap-2 text-center relative">
+            <span class="text-[19px] font-bold text-hippo-navy leading-none font-sans tracking-tight">Aa</span>
+            <h2 class="text-[18px] font-bold text-hippo-navy tracking-wide">ฟอนต์</h2>
+            <div class="admin-only-btn hidden absolute right-2 flex items-center gap-1">
+              <button
+                type="button"
+                onclick="openFontCategoryAdminModal()"
+                class="text-[11px] font-bold bg-white hover:bg-amber-50 text-hippo-navy border border-hippo-cardBorder px-2 py-0.5 rounded-full shadow-2xs"
+              >
+                ⚙️ หมวดหมู่
+              </button>
+              <button
+                type="button"
+                onclick="openFontAdminModal(-1)"
+                class="text-[11px] font-bold bg-amber-100 hover:bg-amber-200 text-amber-900 border border-amber-300 px-2.5 py-0.5 rounded-full shadow-2xs"
+              >
+                + เพิ่มฟอนต์
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- แถบปุ่มเลือกหมวดหมู่ฟอนต์ -->
+        <div class="px-4 pt-2.5 pb-1">
+          <div id="font-categories-bar" class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1"></div>
+        </div>
+
+        <div id="fonts-list" class="px-4 pt-2.5 pb-6 space-y-3.5"></div>
+      </section>
+
+    </main>
+
+    <!-- ===============================================================
+         BOTTOM NAVIGATION BAR
+    ================================================================ -->
+    <nav
+      aria-label="Main Navigation"
+      class="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[520px] z-30 px-3.5 pb-2.5 pt-1 bottom-nav-safe pointer-events-none"
+    >
+      <div class="pointer-events-auto bg-white/95 backdrop-blur-md border border-hippo-cardBorder rounded-[28px] p-1.5 shadow-hippo-card grid grid-cols-3 gap-1.5">
+        <button
+          type="button"
+          onclick="switchTab('home')"
+          id="nav-btn-home"
+          class="nav-tab-btn group flex flex-col items-center justify-center py-1.5 px-2 rounded-[22px] transition-all duration-200 bg-hippo-pill text-hippo-navy font-bold border border-hippo-pillBorder/80 shadow-2xs"
+        >
+          <svg class="w-5 h-5 mb-0.5 stroke-[2.2]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 10.5L12 3l9 7.5V20a1 1 0 01-1 1h-5.5v-6h-5v6H4a1 1 0 01-1-1v-9.5z"/>
+          </svg>
+          <span class="text-[12px] leading-tight">หน้าหลัก</span>
+        </button>
+
+        <button
+          type="button"
+          onclick="switchTab('groups')"
+          id="nav-btn-groups"
+          class="nav-tab-btn group flex flex-col items-center justify-center py-1.5 px-2 rounded-[22px] transition-all duration-200 text-hippo-navyMuted hover:text-hippo-navy hover:bg-hippo-softBlue/60 font-medium border border-transparent"
+        >
+          <svg class="w-5 h-5 mb-0.5 stroke-[2]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/>
+          </svg>
+          <span class="text-[12px] leading-tight">เครือAnnter</span>
+        </button>
+
+        <button
+          type="button"
+          onclick="switchTab('fsale')"
+          id="nav-btn-fsale"
+          class="nav-tab-btn group flex flex-col items-center justify-center py-1.5 px-2 rounded-[22px] transition-all duration-200 text-hippo-navyMuted hover:text-hippo-navy hover:bg-hippo-softBlue/60 font-medium border border-transparent"
+        >
+          <svg class="w-5 h-5 mb-0.5 stroke-[2]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <rect x="3" y="4" width="18" height="16" rx="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="8.5" cy="9" r="1.5"/>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 15l-4.5-4.5L9 18"/>
+          </svg>
+          <span class="text-[12px] leading-tight">เครือพาร์ทเนอร์</span>
+        </button>
+
+      </div>
+    </nav>
+  </div>
+
+  <!-- =====================================================================
+       MODAL 1: BANK & WALLET ACCOUNT DETAILS
+  ====================================================================== -->
+  <div
+    id="bank-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="bank-modal-title"
+    class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-hippo-navy/45 backdrop-blur-[2px] transition-opacity"
+    onclick="handleBackdropClick(event, 'bank-modal')"
+  >
+    <div class="bg-white w-full max-w-[430px] rounded-[26px] border-2 border-hippo-pill overflow-hidden shadow-2xl transform transition-all flex flex-col max-h-[86vh]">
+      <div class="bg-hippo-pill px-5 py-3.5 flex items-center justify-between border-b border-hippo-pillBorder flex-shrink-0">
+        <div class="flex items-center gap-2.5">
+          <span class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-hippo-navy shadow-sm">
+            <svg class="w-4 h-4 stroke-[2.3]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/>
+            </svg>
+          </span>
+          <h3 id="bank-modal-title" class="text-[17px] font-bold text-hippo-navy">
+            ช่องทางการโอนเงิน
+          </h3>
+        </div>
+        <div class="flex items-center gap-1.5">
+          <button
+            type="button"
+            onclick="openBankAdminModal(-1, activePaymentTab)"
+            class="admin-only-btn hidden text-[11px] font-bold bg-amber-100 hover:bg-amber-200 text-amber-900 border border-amber-300 px-2.5 py-1 rounded-full"
+          >
+            + เพิ่มช่องทางโอน
+          </button>
+          <button
+            type="button"
+            onclick="closeModal('bank-modal')"
+            aria-label="Close bank accounts modal"
+            class="w-8 h-8 rounded-full bg-white/80 hover:bg-white text-hippo-navy flex items-center justify-center transition"
+          >
+            <svg class="w-5 h-5 stroke-[2.5]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- ปุ่มแท็บสลับ ธนาคาร (Bank) กับ วอเลต (Wallet) -->
+      <div class="px-5 pt-3.5 pb-1 bg-white flex-shrink-0">
+        <div class="grid grid-cols-2 gap-2 bg-hippo-bg p-1.5 rounded-full border border-hippo-cardBorder">
+          <button
+            type="button"
+            id="pay-tab-bank"
+            onclick="switchPaymentTab('bank')"
+            class="py-2 px-3 rounded-full text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-1.5 bg-hippo-btn text-white shadow-xs"
+          >
+            <span>🏦 บัญชีธนาคาร</span>
+            <span id="pay-count-bank" class="text-[11px] px-1.5 py-0.2 rounded-full bg-white/20">0</span>
+          </button>
+          <button
+            type="button"
+            id="pay-tab-wallet"
+            onclick="switchPaymentTab('wallet')"
+            class="py-2 px-3 rounded-full text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-1.5 text-hippo-navyMuted hover:text-hippo-navy"
+          >
+            <span>📱 วอเลต (Wallet)</span>
+            <span id="pay-count-wallet" class="text-[11px] px-1.5 py-0.2 rounded-full bg-hippo-pill text-hippo-navy">0</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="p-5 pt-3 space-y-3.5 overflow-y-auto flex-1">
+        <div id="bank-accounts-container" class="space-y-3"></div>
+
+        <button
+          type="button"
+          onclick="closeModal('bank-modal')"
+          class="w-full py-2.5 rounded-full border border-hippo-cardBorder bg-hippo-bg hover:bg-hippo-pill/50 text-hippo-navy font-semibold text-sm transition"
+        >
+          ปิดหน้าต่างนี้
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       MODAL 2: PREVIEW GALLERY & ARTWORK DETAILS
+  ====================================================================== -->
+  <div
+    id="preview-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="preview-modal-title"
+    class="fixed inset-0 z-50 hidden items-center justify-center p-3.5 sm:p-5 bg-hippo-navy/50 backdrop-blur-[2px] transition-opacity"
+    onclick="handleBackdropClick(event, 'preview-modal')"
+  >
+    <div class="bg-white w-full max-w-[460px] rounded-[26px] border-2 border-hippo-pill overflow-hidden shadow-2xl flex flex-col max-h-[88vh]">
+      <div class="bg-hippo-pill px-4 py-3.5 flex items-center justify-between border-b border-hippo-pillBorder flex-shrink-0">
+        <div class="pr-2">
+          <span id="preview-modal-badge" class="inline-block text-[11px] font-semibold bg-white text-hippo-btn px-2.5 py-0.5 rounded-full mb-0.5">
+            Category
+          </span>
+          <h3 id="preview-modal-title" class="text-[18px] font-bold text-hippo-navy leading-snug">
+            Title
+          </h3>
+        </div>
+        <button
+          type="button"
+          onclick="closeModal('preview-modal')"
+          aria-label="Close preview modal"
+          class="w-9 h-9 rounded-full bg-white/90 hover:bg-white text-hippo-navy flex items-center justify-center shadow-sm transition flex-shrink-0"
+        >
+          <svg class="w-5 h-5 stroke-[2.5]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="p-4 sm:p-5 overflow-y-auto space-y-4">
+        <div class="relative rounded-2xl overflow-hidden bg-hippo-bg border border-hippo-cardBorder">
+          <div
+            id="preview-slides-track"
+            class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar"
+          ></div>
+
+          <button
+            type="button"
+            id="preview-prev-btn"
+            onclick="stepPreviewSlide(-1)"
+            aria-label="Previous image"
+            class="hidden absolute left-2.5 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white/90 hover:bg-white text-hippo-navy shadow-md items-center justify-center transition"
+          >
+            <svg class="w-4 h-4 stroke-[2.5]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+            </svg>
+          </button>
+          <button
+            type="button"
+            id="preview-next-btn"
+            onclick="stepPreviewSlide(1)"
+            aria-label="Next image"
+            class="hidden absolute right-2.5 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white/90 hover:bg-white text-hippo-navy shadow-md items-center justify-center transition"
+          >
+            <svg class="w-4 h-4 stroke-[2.5]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+            </svg>
+          </button>
+
+          <div
+            id="preview-counter"
+            class="absolute bottom-2.5 right-3 bg-hippo-navy/75 text-white text-[11px] font-medium px-2.5 py-0.5 rounded-full backdrop-blur-xs"
+          >
+            1 / 1
+          </div>
+        </div>
+
+        <div class="bg-hippo-bg rounded-2xl p-4 border border-hippo-cardBorder space-y-2">
+          <div id="preview-meta" class="text-xs font-medium text-hippo-btn"></div>
+          <p id="preview-description" class="text-[14.5px] text-hippo-navy leading-relaxed"></p>
+          <div id="preview-tags" class="flex flex-wrap gap-1.5 pt-1"></div>
+        </div>
+
+        <button
+          type="button"
+          onclick="closeModal('preview-modal')"
+          class="w-full py-2.5 rounded-full bg-hippo-pill hover:bg-hippo-pillBorder/70 text-hippo-navy font-bold text-sm transition"
+        >
+          กลับไปหน้ารายการ
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       MODAL 4: DYNAMIC ADMIN EDITOR MODAL
+  ====================================================================== -->
+  <div
+    id="admin-editor-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="admin-editor-title"
+    class="fixed inset-0 z-50 hidden items-center justify-center p-3.5 sm:p-5 bg-hippo-navy/55 backdrop-blur-[2px] transition-opacity"
+    onclick="handleBackdropClick(event, 'admin-editor-modal')"
+  >
+    <div class="bg-white w-full max-w-[460px] rounded-[26px] border-2 border-hippo-pill overflow-hidden shadow-2xl flex flex-col max-h-[90vh]">
+      <div class="bg-hippo-pill px-4 py-3.5 flex items-center justify-between border-b border-hippo-pillBorder">
+        <h3 id="admin-editor-title" class="text-[17px] font-bold text-hippo-navy">
+          แก้ไขข้อมูล
+        </h3>
+        <button
+          type="button"
+          onclick="closeModal('admin-editor-modal')"
+          class="w-8 h-8 rounded-full bg-white/90 hover:bg-white text-hippo-navy flex items-center justify-center"
+        >
+          ✕
+        </button>
+      </div>
+      <form id="admin-editor-form" onsubmit="handleAdminFormSubmit(event)" class="p-4 sm:p-5 overflow-y-auto space-y-3 text-sm">
+        <div id="admin-editor-fields" class="space-y-3"></div>
+        <div class="flex items-center justify-between gap-2 pt-3 border-t border-hippo-cardBorder">
+          <button
+            type="button"
+            id="admin-delete-btn"
+            onclick="handleAdminDelete()"
+            class="hidden px-4 py-2 rounded-full bg-rose-100 hover:bg-rose-200 text-rose-700 font-bold text-xs transition"
+          >
+            🗑️ ลบรายการนี้
+          </button>
+          <div class="flex items-center gap-2 ml-auto">
+            <button
+              type="button"
+              onclick="closeModal('admin-editor-modal')"
+              class="px-4 py-2 rounded-full border border-hippo-cardBorder text-hippo-navy font-semibold text-xs"
+            >
+              ยกเลิก
+            </button>
+            <button
+              type="submit"
+              class="px-5 py-2 rounded-full bg-hippo-btn hover:bg-hippo-btnHover text-white font-bold text-xs shadow-hippo-btn transition"
+            >
+              💾 บันทึกข้อมูล
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       TOAST NOTIFICATION
+  ====================================================================== -->
+  <div
+    id="toast-notification"
+    role="status"
+    aria-live="polite"
+    class="fixed top-4 left-1/2 -translate-x-1/2 z-50 pointer-events-none opacity-0 -translate-y-3 transition-all duration-300 bg-hippo-navy text-white text-sm font-medium px-4 py-2.5 rounded-full shadow-lg flex items-center gap-2"
+  >
+    <svg class="w-4 h-4 text-[#8CE99A] flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+    </svg>
+    <span id="toast-message">คัดลอกสำเร็จ</span>
+  </div>
+
+  <!-- =====================================================================
+       APPLICATION DATA & CONTROLLER LOGIC
+  ====================================================================== -->
+  <script>
+    const STORAGE_KEY = 'ANNTER_SHOP_SITE_DATA_V1';
+    let isAdminMode = false;
+    let activeGroupModalIndex = 0;
+    let activePartnerIndex = 0;
+
+    const DEFAULT_PARTNER_CATEGORIES = [
+      {
+        "name": "ตูน",
+        "detail": "",
+        "subItems": [
+          {
+            "id": "catalog-toon",
+            "name": "🧸 ·⸝⸝ 𝙻𝙰𝚉𝚈 𝙱𝙴𝙰𝚁  ·⸝⸝ 🧸",
+            "detail": "˒˒ 🍯 กลุ่มตูนคาแรคเตอร์เฉพาะ\nแต่งง่าย ⿻ แต่งแนวไหนก็สวย ῾🌻\n🍃 ทยอยอัพ 𓂃 ทั้งหมด 𝟸𝟶 ตัว 🥛🥟",
+            "price": "1⃣5⃣9⃣.-",
+            "driveUrl": "https://drive.google.com/drive/folders/1SfQjRGZ6QFJ1hrjdLOukDEVuUTMD9HkC",
+            "imageUrl": "https://i.postimg.cc/Y05fQ3hJ/IMG-9218.jpg"
+          }
+        ]
+      },
+      {
+        "name": "ลายเส้น",
+        "detail": "",
+        "subItems": [
+          {
+            "id": "catalog-line",
+            "name": "Lamoon Group ˚◞♡",
+            "detail": "กลุ่มลายเส้นน่ารัก ลงสีง่าย\nอัพงานครบ 30 เซตเรียบร้อย\nลายเส้นเฉพาะกลุ่มไม่เจอที่ไหนแน่นอน !",
+            "price": "79.-",
+            "driveUrl": "https://drive.google.com/drive/folders/1kprbLj4SmgbTozBNnM0KZkNs9l86zyEo",
+            "imageUrl": "https://i.postimg.cc/PqDLwj10/IMG-9221.jpg"
+          }
+        ]
+      },
+      {
+        "name": "บล็อก",
+        "detail": "",
+        "subItems": [
+          {
+            "id": "catalog-block",
+            "name": "Mitarashi",
+            "detail": "ㅎ𐬹𓈒 ° กลุ่ม Box เฉพาะ อัพให้ถึง 25 Box ❕สไตล์มินิมอล แต่งง่าย ไม่ซับซ้อน ถูกและคุ้มกว่านี้ไม่มีอีกแย้ว ว  ˚ ⊹ ˚",
+            "price": "49",
+            "driveUrl": "https://drive.google.com/drive/folders/1d6IxpNl4zajE7XP-W2KJ17wkGPkG11uj",
+            "imageUrl": "https://i.postimg.cc/cHj55fvH/IMG-9219.jpg"
+          }
+        ]
+      },
+      {
+        "name": "กลุ่มสอน",
+        "detail": "",
+        "subItems": []
+      },
+      {
+        "name": "ของตกแต่ง",
+        "detail": "",
+        "subItems": [
+          {
+            "id": "catalog-decor",
+            "name": "Pastel Land",
+            "detail": "กลุ่มของตกแต่ง งานเฉพาะกลุ่ม\nงานน่ารัก สดใส ใช้ตกแต่งป้ายก็เริ่ด🐹⛅️\nใช้ตกแต่งเว็บ ทำรายงานก็โซคิ้วท์สุดๆ",
+            "price": "39",
+            "driveUrl": "https://drive.google.com/drive/folders/1AWbRB65SfkIP59lwupTYf4FoOL6nKuJy",
+            "imageUrl": "https://i.postimg.cc/bNPRY6fp/IMG-9220.jpg"
+          }
+        ]
+      },
+      {
+        "name": "อื่นๆ",
+        "detail": "",
+        "subItems": []
+      }
+    ];
+
+    const DEFAULT_SITE_DATA = {
+      welcomePages: [
+        {
+          title: 'ยินดีต้อนรับสู่ Annter Shop 🦖',
+          text: 'เลือกดูเครือAnnter และเครือพาร์ทเนอร์ได้จากเมนูด้านล่างค่ะ\nถ้าสนใจชิ้นไหนหรืออยากสอบถามเพิ่มเติม กดช่องทางติดต่อที่หน้าหลักได้เลย 💚',
+          images: []
+        },
+        {
+          title: '',
+          text: '',
+          images: ['https://i.postimg.cc/j2fJ9mYt/IMG-9089.jpg']
+        }
+      ],
+      brandHeader: {
+        name: 'Annter Shop',
+        badge: 'Official',
+        subtitle: 'รวมกลุ่มเครือ Annter สติ๊กเกอร์ ของตกแต่ง & ฟอนต์น่ารัก ✨',
+        logoUrl: 'https://i.postimg.cc/PrkHY9J5/att-FXAESa-Ylg-GKX1o-Mf-RWXBx5Z5wt3-k-Jbr4P0b-XQHRHY8.jpg',
+        discImageUrl: 'https://i.postimg.cc/PrkHY9J5/att-FXAESa-Ylg-GKX1o-Mf-RWXBx5Z5wt3-k-Jbr4P0b-XQHRHY8.jpg',
+        musicTracks: [
+          { id: 'track-1', name: '1. Annter Pastel Music Box', tempo: 116, notes: [523.25, 659.25, 783.99, 1046.5, 783.99, 659.25, 587.33, 698.46, 880.0, 698.46] },
+          { id: 'track-2', name: '2. Sweet Cloud Lullaby', tempo: 98, notes: [659.25, 783.99, 880.0, 783.99, 659.25, 523.25, 587.33, 659.25, 523.25] },
+          { id: 'track-3', name: '3. Afternoon Cafe Waltz', tempo: 124, notes: [440.0, 523.25, 659.25, 880.0, 783.99, 659.25, 587.33, 698.46, 659.25] },
+          { id: 'track-4', name: '4. Starlight Note Waltz', tempo: 108, notes: [587.33, 783.99, 987.77, 880.0, 783.99, 659.25, 523.25, 659.25, 783.99] }
+        ]
+      },
+
+      banners: [
+        {
+          id: 'banner-1',
+          title: 'ยินดีต้อนรับสู่ Annter Shop',
+          subtitle: 'รวมกลุ่มเครือ Annter และเครือพาร์ทเนอร์',
+          imageUrl: 'https://i.postimg.cc/j2fJ9mYt/IMG-9089.jpg',
+          linkUrl: '#groups',
+          actionTab: 'groups',
+          svgType: 'hippo-sleeping-cloud'
+        },
+        {
+          id: 'banner-2',
+          title: 'อัปเดตคลังกลุ่มเครือ Annter & ของตกแต่ง',
+          subtitle: 'แตะเพื่อชมตัวอย่างผลงานในกลุ่มทั้งหมดของร้าน',
+          imageUrl: 'https://i.postimg.cc/QdYxQmv6/IMG-9088.jpg',
+          linkUrl: '#groups',
+          actionTab: 'groups',
+          svgType: 'banner-stationery'
+        }
+      ],
+
+      contacts: [
+        {
+          id: 'line',
+          name: 'LINE',
+          url: '',
+          isSample: true,
+          handle: 'รอระบุไอดี LINE ของร้าน'
+        },
+        {
+          id: 'instagram',
+          name: 'Instagram',
+          url: '',
+          isSample: true,
+          handle: 'รอระบุ Instagram ของร้าน'
+        },
+        {
+          id: 'facebook',
+          name: 'Facebook',
+          url: '',
+          isSample: true,
+          handle: 'รอระบุ Facebook ของร้าน'
+        }
+      ],
+
+      bankAccounts: [
+        {
+          id: 'kbank',
+          category: 'bank',
+          bankName: 'ธนาคารกสิกรไทย (KBank)',
+          bankColor: '#138F2D',
+          accountName: 'ชื่อบัญชีร้าน Annter Shop (รอระบุ)',
+          accountNumber: '000-0-00000-0',
+          branch: 'รอระบุสาขา',
+          imageUrl: ''
+        },
+        {
+          id: 'scb',
+          category: 'bank',
+          bankName: 'ธนาคารไทยพาณิชย์ (SCB)',
+          bankColor: '#4E2A84',
+          accountName: 'ชื่อบัญชีร้าน Annter Shop (รอระบุ)',
+          accountNumber: '000-0-00000-0',
+          branch: 'รอระบุสาขา',
+          imageUrl: ''
+        },
+        {
+          id: 'truemoney',
+          category: 'wallet',
+          bankName: 'TrueMoney Wallet (ทรูมันนี่ วอเลต)',
+          bankColor: '#FF6600',
+          accountName: 'ชื่อบัญชีร้าน Annter Shop (รอระบุ)',
+          accountNumber: '080-000-0000',
+          branch: 'พร้อมเพย์ / วอเลต',
+          imageUrl: ''
+        }
+      ],
+
+      networkLayoutVersion: 1,
+      catalogVersion: 1,
+      otherLinks: [
+        {
+          "id": "network-annter",
+          "title": "เครือAnnter",
+          "subtitle": "",
+          "imageUrl": "https://i.postimg.cc/sfk4n5Gw/IMG-9092.jpg",
+          "url": "https://line.me/ti/g/KVGFDZhxE8"
+        },
+        {
+          "id": "network-wanla-pa",
+          "title": "เครือWanla Pa",
+          "subtitle": "",
+          "imageUrl": "https://i.postimg.cc/xdBX0326/IMG-9093.jpg",
+          "url": "https://line.me/ti/g/BQMHVBxNpM"
+        },
+        {
+          "id": "network-hip",
+          "title": "เครือฮิป",
+          "subtitle": "",
+          "imageUrl": "https://i.postimg.cc/sX9stYDc/IMG-9094.jpg",
+          "url": "https://line.me/ti/g/upUr_EmKMr"
+        },
+        {
+          "id": "network-nes",
+          "title": "เครือเนส",
+          "subtitle": "",
+          "imageUrl": "https://i.postimg.cc/gjzmdxxd/IMG-9095.jpg",
+          "url": "https://line.me/ti/g/NzA2SArvWD"
+        }
+      ],
+
+      partners: [
+        {
+          "id": "network-wanla-pa",
+          "title": "เครือWanla Pa",
+          "shortDesc": "",
+          "imageUrl": "https://i.postimg.cc/xdBX0326/IMG-9093.jpg",
+          "categories": DEFAULT_PARTNER_CATEGORIES
+        },
+        {
+          "id": "network-hip",
+          "title": "เครือฮิป",
+          "shortDesc": "",
+          "imageUrl": "https://i.postimg.cc/sX9stYDc/IMG-9094.jpg",
+          "categories": DEFAULT_PARTNER_CATEGORIES
+        },
+        {
+          "id": "network-nes",
+          "title": "เครือเนส",
+          "shortDesc": "",
+          "imageUrl": "https://i.postimg.cc/gjzmdxxd/IMG-9095.jpg",
+          "categories": DEFAULT_PARTNER_CATEGORIES
+        }
+      ],
+
+      groups: [
+        {
+          "id": "annter-toon",
+          "title": "รวมกลุ่มตูน",
+          "shortDesc": "",
+          "imageUrl": "https://i.postimg.cc/zXf1QF2r/IMG-9215.jpg",
+          "subItems": [
+            {
+              "id": "catalog-toon",
+              "name": "🧸 ·⸝⸝ 𝙻𝙰𝚉𝚈 𝙱𝙴𝙰𝚁  ·⸝⸝ 🧸",
+              "detail": "˒˒ 🍯 กลุ่มตูนคาแรคเตอร์เฉพาะ\nแต่งง่าย ⿻ แต่งแนวไหนก็สวย ῾🌻\n🍃 ทยอยอัพ 𓂃 ทั้งหมด 𝟸𝟶 ตัว 🥛🥟",
+              "price": "1⃣5⃣9⃣.-",
+              "driveUrl": "https://drive.google.com/drive/folders/1SfQjRGZ6QFJ1hrjdLOukDEVuUTMD9HkC",
+              "imageUrl": "https://i.postimg.cc/Y05fQ3hJ/IMG-9218.jpg"
+            }
+          ]
+        },
+        {
+          "id": "annter-block",
+          "title": "รวมกลุ่มบล็อก",
+          "shortDesc": "",
+          "imageUrl": "https://i.postimg.cc/Prqk7QVz/IMG-9216.jpg",
+          "subItems": [
+            {
+              "id": "catalog-block",
+              "name": "Mitarashi",
+              "detail": "ㅎ𐬹𓈒 ° กลุ่ม Box เฉพาะ อัพให้ถึง 25 Box ❕สไตล์มินิมอล แต่งง่าย ไม่ซับซ้อน ถูกและคุ้มกว่านี้ไม่มีอีกแย้ว ว  ˚ ⊹ ˚",
+              "price": "49",
+              "driveUrl": "https://drive.google.com/drive/folders/1d6IxpNl4zajE7XP-W2KJ17wkGPkG11uj",
+              "imageUrl": "https://i.postimg.cc/cHj55fvH/IMG-9219.jpg"
+            }
+          ]
+        },
+        {
+          "id": "annter-line",
+          "title": "รวมกลุ่มลายเส้น",
+          "shortDesc": "",
+          "imageUrl": "https://i.postimg.cc/g2XbzkW0/IMG-9217.jpg",
+          "subItems": [
+            {
+              "id": "catalog-line",
+              "name": "Lamoon Group ˚◞♡",
+              "detail": "กลุ่มลายเส้นน่ารัก ลงสีง่าย\nอัพงานครบ 30 เซตเรียบร้อย\nลายเส้นเฉพาะกลุ่มไม่เจอที่ไหนแน่นอน !",
+              "price": "79.-",
+              "driveUrl": "https://drive.google.com/drive/folders/1kprbLj4SmgbTozBNnM0KZkNs9l86zyEo",
+              "imageUrl": "https://i.postimg.cc/PqDLwj10/IMG-9221.jpg"
+            }
+          ]
+        },
+        {
+          "id": "annter-font",
+          "title": "รวมกลุ่มฟอนต์",
+          "shortDesc": "",
+          "imageUrl": "https://i.postimg.cc/zXf1QF2r/IMG-9215.jpg",
+          "subItems": []
+        },
+        {
+          "id": "annter-teach",
+          "title": "รวมกลุ่มสอน",
+          "shortDesc": "",
+          "imageUrl": "https://i.postimg.cc/Prqk7QVz/IMG-9216.jpg",
+          "subItems": []
+        },
+        {
+          "id": "annter-decor",
+          "title": "รวมกลุ่มของตกแต่ง",
+          "shortDesc": "",
+          "imageUrl": "https://i.postimg.cc/g2XbzkW0/IMG-9217.jpg",
+          "subItems": [
+            {
+              "id": "catalog-decor",
+              "name": "Pastel Land",
+              "detail": "กลุ่มของตกแต่ง งานเฉพาะกลุ่ม\nงานน่ารัก สดใส ใช้ตกแต่งป้ายก็เริ่ด🐹⛅️\nใช้ตกแต่งเว็บ ทำรายงานก็โซคิ้วท์สุดๆ",
+              "price": "39",
+              "driveUrl": "https://drive.google.com/drive/folders/1AWbRB65SfkIP59lwupTYf4FoOL6nKuJy",
+              "imageUrl": "https://i.postimg.cc/bNPRY6fp/IMG-9220.jpg"
+            }
+          ]
+        }
+      ],
+
+      fSaleItems: [
+        {
+          id: 'fsale-sweet-stamp',
+          title: 'แสตมป์หวาน',
+          shortDesc: 'กราฟิกแสตมป์ธีมวินเทจ',
+          fullDesc: 'ชุดกราฟิกแสตมป์ขอบหยักธีมทุ่งหญ้าดอกไม้เดซี่และท้องฟ้าวันสดใส ให้ความรู้สึกวินเทจละมุนตา เหมาะสำหรับทำป้ายโลโก้ร้าน สติ๊กเกอร์ติดซอง หรือของตกแต่งดิจิทัล',
+          meta: 'สัดส่วน 1:1 • ความละเอียด 300 DPI',
+          tags: ['แสตมป์วินเทจ', 'ทุ่งดอกไม้', 'พาสเทล'],
+          coverArt: 'fsale-meadow',
+          imageUrl: '',
+          samples: [
+            { title: 'ภาพหลัก: ทุ่งหญ้าดอกไม้และก้อนเมฆปุกปุย', art: 'fsale-meadow', imageUrl: '' },
+            { title: 'ตัวอย่างแบบขอบแสตมป์ไปรษณีย์วินเทจ', art: 'fsale-meadow-stamp', imageUrl: '' }
+          ]
+        },
+        {
+          id: 'fsale-deco-bow',
+          title: 'โบว์ตกแต่ง',
+          shortDesc: 'องค์ประกอบโบว์หลากสไตล์',
+          fullDesc: 'เซ็ตลวดลายผ้าตารางกิงแฮม (Gingham) พาสเทลคู่กับองค์ประกอบริบบิ้นและโบว์ผูกหลากหลายรูปทรง สำหรับนำไปตกแต่งกรอบรูป ป้ายชื่อ หรือปกไฮไลท์',
+          meta: 'ไร้รอยต่อ (Seamless Pattern) + ไฟล์แยกชิ้น',
+          tags: ['ลายสก๊อตพาสเทล', 'โบว์ริบบิ้น', 'ของตกแต่ง'],
+          coverArt: 'fsale-gingham',
+          imageUrl: '',
+          samples: [
+            { title: 'ลายผ้าตารางกิงแฮมสีพาสเทลละมุน', art: 'fsale-gingham', imageUrl: '' },
+            { title: 'ตัวอย่างเซ็ตโบว์ริบบิ้นเข้าชุด', art: 'fsale-bow-set', imageUrl: '' }
+          ]
+        },
+        {
+          id: 'fsale-sky-bg',
+          title: 'ฉากหลังท้องฟ้า',
+          shortDesc: 'แบ็กกราวด์โทนละมุน',
+          fullDesc: 'ภาพวาดฉากหลังท้องฟ้ายามเย็นอมชมพูม่วงพาสเทล ประดับด้วยก้อนเมฆนุ่มฟูและพระจันทร์เสี้ยวสีเหลืองนวล ให้บรรยากาศชวนฝันสำหรับทำพื้นหลังป้ายร้านหรือวอลเปเปอร์',
+          meta: 'ไฟล์ภาพพื้นหลังความละเอียดสูง',
+          tags: ['ฉากหลังท้องฟ้า', 'พระจันทร์เสี้ยว', 'พาสเทลละมุน'],
+          coverArt: 'fsale-night-sky',
+          imageUrl: '',
+          samples: [
+            { title: 'ฉากหลังท้องฟ้าพระจันทร์เสี้ยวและปุยเมฆ', art: 'fsale-night-sky', imageUrl: '' },
+            { title: 'ตัวอย่างการวางข้อความบนฉากหลัง', art: 'fsale-night-sky-mockup', imageUrl: '' }
+          ]
+        },
+        {
+          id: 'fsale-flower-berry',
+          title: 'ดอกไม้และสตรอว์เบอร์รี',
+          shortDesc: 'ภาพประกอบสำหรับตกแต่ง',
+          fullDesc: 'ภาพประกอบช่อดอกเดซี่สีขาวเกสรเหลืองสดใสบนพื้นหลังโทนอ่อน วาดด้วยบรัชสีไม้กึ่งสีน้ำสุดละมุน สามารถนำไปจัดช่อหรือวางประดับมุมการ์ดได้อย่างลงตัว',
+          meta: 'ไฟล์แยกเลเยอร์ + พื้นหลังโปร่งใส',
+          tags: ['ดอกเดซี่', 'ภาพประกอบวาดมือ', 'ธรรมชาติ'],
+          coverArt: 'fsale-daisy',
+          imageUrl: '',
+          samples: [
+            { title: 'ภาพประกอบช่อดอกเดซี่สีขาว', art: 'fsale-daisy', imageUrl: '' },
+            { title: 'ตัวอย่างองค์ประกอบดอกไม้และสตรอว์เบอร์รี', art: 'fsale-daisy-berry', imageUrl: '' }
+          ]
+        }
+      ],
+
+      fonts: [
+        {
+          id: 'font-strawberry',
+          name: 'ฟอนต์สตรอว์เบอร์รี',
+          category: 'ฟอนต์ลายมือน่ารัก',
+          lang: 'ไทย / อังกฤษ',
+          shortDesc: 'ลายมือน่ารัก หัวกลม อ่านง่ายสบายตา',
+          fullDesc: 'ฟอนต์สตรอว์เบอร์รี (Strawberry) เป็นฟอนต์ลายมือหัวกลมที่มีความเรียบร้อย อ่านง่ายทั้งขนาดเล็กและขนาดใหญ่ มาพร้อมสระลอยที่จัดตำแหน่งอย่างพอดี เหมาะสำหรับทำสรุปเนื้อหา จดโน้ต และเขียนแคปชันแต่งภาพ',
+          fontClass: 'font-strawberry font-semibold',
+          previewStyle: 'normal',
+          imageUrl: '',
+          specimenImageUrl: '',
+          meta: 'รองรับ ไทย / อังกฤษ / ตัวเลข / สัญลักษณ์พิเศษ (.TTF, .OTF)',
+          tags: ['ฟอนต์หัวกลม', 'อ่านง่าย', 'จดสรุป'],
+          samples: [
+            { title: 'แผ่นตัวอย่างชุดตัวอักษรฟอนต์สตรอว์เบอร์รี', fontType: 'strawberry', sheetMode: 'main' },
+            { title: 'ตัวอย่างการพิมพ์ประโยคและตัวเลข', fontType: 'strawberry', sheetMode: 'pangram' }
+          ]
+        },
+        {
+          id: 'font-lavender',
+          name: 'ฟอนต์ลาเวนเดอร์',
+          category: 'ฟอนต์สไตล์คาเฟ่',
+          lang: 'ไทย / อังกฤษ',
+          shortDesc: 'เส้นพลิ้วไหว สไตล์คาเฟ่ละมุนตา',
+          fullDesc: 'ฟอนต์ลาเวนเดอร์ (Lavender) ออกแบบให้มีเส้นสายพลิ้วไหวกึ่งตัวเขียนเอียงเล็กน้อย ให้ความรู้สึกอบอุ่นโรแมนติกเหมือนป้ายเมนูในคาเฟ่ เหมาะสำหรับทำหัวข้อ การ์ดอวยพร โลโก้ร้าน หรือคำคมสั้นๆ',
+          fontClass: 'font-lavender italic',
+          previewStyle: 'italic',
+          imageUrl: '',
+          specimenImageUrl: '',
+          meta: 'รองรับ ไทย / อังกฤษ / ตัวเลข (.TTF, .OTF)',
+          tags: ['ฟอนต์ตัวเอียง', 'สไตล์คาเฟ่', 'หัวข้อการ์ด'],
+          samples: [
+            { title: 'แผ่นตัวอย่างชุดตัวอักษรฟอนต์ลาเวนเดอร์', fontType: 'lavender', sheetMode: 'main' },
+            { title: 'ตัวอย่างการจัดวางหัวข้อและคำบรรยาย', fontType: 'lavender', sheetMode: 'pangram' }
+          ]
+        },
+        {
+          id: 'font-creampuff',
+          name: 'ฟอนต์ครีมพัพ',
+          category: 'ฟอนต์พาดหัวป้าย',
+          lang: 'ไทย / อังกฤษ',
+          shortDesc: 'ตัวอักษรนุ่มฟู อ้วนกลม เด่นชัด',
+          fullDesc: 'ฟอนต์ครีมพัพ (Cream Puff) ฟอนต์เส้นหนานุ่มฟู ทรงอ้วนกลมไร้หัว ให้ลุคโมเดิร์นน่ารักสะดุดตา เหมาะอย่างยิ่งสำหรับทำป้ายชื่อสินค้า ปกคลิป หรือพาดหัวขนาดใหญ่ที่ต้องการความสดใส',
+          fontClass: 'font-creampuff font-bold',
+          previewStyle: 'bold',
+          imageUrl: '',
+          specimenImageUrl: '',
+          meta: 'รองรับ ไทย / อังกฤษ / ตัวเลข (.TTF, .OTF)',
+          tags: ['ฟอนต์ไร้หัว', 'เส้นหนานุ่มฟู', 'พาดหัวป้าย'],
+          samples: [
+            { title: 'แผ่นตัวอย่างชุดตัวอักษรฟอนต์ครีมพัพ', fontType: 'creampuff', sheetMode: 'main' },
+            { title: 'ตัวอย่างการนำไปแต่งป้ายและสติ๊กเกอร์', fontType: 'creampuff', sheetMode: 'pangram' }
+          ]
+        }
+      ]
+    };
+
+    function loadSiteData() {
+      try {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+          const parsed = JSON.parse(saved);
+          const defaults = JSON.parse(JSON.stringify(DEFAULT_SITE_DATA));
+          if (parsed.networkLayoutVersion !== defaults.networkLayoutVersion) {
+            // Apply the new homepage cards once while retaining the other saved settings.
+            delete parsed.otherLinks;
+          }
+          if (parsed.catalogVersion !== defaults.catalogVersion) {
+            if (Array.isArray(parsed.groups)) {
+              const demoItems = {
+                'group-sweet-sticker': ['sub-sticker-1', 'sub-sticker-2', 'sub-sticker-3'],
+                'group-note-paper': ['sub-note-1', 'sub-note-2']
+              };
+              const existingGroups = parsed.groups.filter(group => {
+                const ids = demoItems[group.id];
+                return !ids || group.imageUrl || group.subItems?.some(item =>
+                  !ids.includes(item.id) || item.imageUrl || item.driveUrl !== 'https://drive.google.com/drive/u/0/my-drive');
+              });
+              parsed.groups = [...defaults.groups, ...existingGroups.filter(group =>
+                !defaults.groups.some(entry => entry.id === group.id))];
+            }
+            if (Array.isArray(parsed.partners)) {
+              parsed.partners.forEach(partner => {
+                const existingCategories = partner.categories || [];
+                partner.categories = defaults.partners[0].categories.map(category => {
+                  const existing = existingCategories.find(entry => entry.name.trim() === category.name);
+                  return {
+                    ...category,
+                    ...existing,
+                    subItems: existing?.subItems?.length
+                      ? existing.subItems
+                      : category.subItems.map(item => ({ ...item }))
+                  };
+                });
+                partner.categories.push(...existingCategories.filter(entry =>
+                  !partner.categories.some(category => entry.name.trim() === category.name)));
+              });
+            }
+            parsed.catalogVersion = defaults.catalogVersion;
+          }
+          return Object.assign(defaults, parsed, { networkLayoutVersion: defaults.networkLayoutVersion });
+        }
+      } catch (e) {}
+      return JSON.parse(JSON.stringify(DEFAULT_SITE_DATA));
+    }
+
+    let SITE_DATA = loadSiteData();
+
+    const introBrand = SITE_DATA.brandHeader || DEFAULT_SITE_DATA.brandHeader;
+    const introLogo = document.getElementById('nh-intro-logo');
+    if (introBrand.logoUrl && introLogo.getAttribute('src') !== introBrand.logoUrl) {
+      introLogo.hidden = false;
+      introLogo.src = introBrand.logoUrl;
+    }
+    document.getElementById('nh-intro-brand').textContent = introBrand.name || 'Annter Shop';
+
+    function saveSiteData() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(SITE_DATA));
+      } catch (e) {}
+    }
+
+    function resetSiteDataToDefault() {
+      SITE_DATA = JSON.parse(JSON.stringify(DEFAULT_SITE_DATA));
+      saveSiteData();
+      renderAllSections();
+      showToast('รีเซ็ตข้อมูลกลับเป็นค่าเริ่มต้นเรียบร้อยแล้ว');
+    }
+
+    function getArtworkSVG(artKey) {
+      switch (artKey) {
+        case 'hippo-sleeping-cloud':
+          return `
+            <svg viewBox="0 0 400 220" class="w-full h-full object-cover">
+              <defs>
+                <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#B8E8CE"/>
+                  <stop offset="100%" stop-color="#E2F7EC"/>
+                </linearGradient>
+              </defs>
+              <rect width="400" height="220" fill="url(#skyGrad)"/>
+              <g fill="#FFFFFF" opacity="0.9">
+                <path d="M35 65 C35 55, 48 52, 54 58 C60 50, 76 52, 78 62 C86 63, 86 74, 76 75 L36 75 C26 74, 26 65, 35 65 Z"/>
+                <path d="M320 55 C320 46, 332 43, 338 49 C344 41, 358 43, 360 52 C368 53, 368 63, 358 64 L322 64 C312 63, 312 55, 320 55 Z"/>
+                <path d="M335 135 C335 127, 345 125, 350 130 C356 124, 368 126, 370 134 C376 135, 376 144, 368 145 L336 145 C328 144, 328 135, 335 135 Z"/>
+              </g>
+              <path d="M55 170 C35 170, 28 148, 48 140 C45 122, 72 112, 92 124 C110 105, 150 108, 168 122 C192 104, 238 106, 256 124 C278 110, 315 116, 322 136 C348 140, 352 168, 326 174 C315 190, 275 194, 250 184 C225 196, 175 196, 150 184 C122 195, 75 190, 55 170 Z" fill="#E7F7EE"/>
+              <path d="M62 164 C42 164, 36 144, 54 136 C52 120, 76 112, 96 122 C115 106, 152 108, 170 120 C194 104, 236 106, 252 122 C274 110, 308 115, 314 134 C338 138, 342 162, 318 168 C306 182, 270 186, 246 176 C222 188, 176 188, 152 176 C126 186, 82 182, 62 164 Z" fill="#FFFFFF"/>
+              <text x="200" y="115" text-anchor="middle" fill="#1D4636" font-family="Mali, sans-serif" font-weight="700" font-size="26">Annter Shop 🦖</text>
+              <text x="200" y="145" text-anchor="middle" fill="#387B5E" font-family="Prompt, sans-serif" font-size="14">ศูนย์รวมกลุ่มเครือ Annter &amp; ของตกแต่งน่ารัก</text>
+            </svg>
+          `;
+
+        case 'banner-stationery':
+          return `
+            <svg viewBox="0 0 400 220" class="w-full h-full object-cover">
+              <rect width="400" height="220" fill="#CBEPD9"/>
+              <circle cx="65" cy="48" r="26" fill="#FFFFFF" opacity="0.5"/>
+              <circle cx="345" cy="170" r="42" fill="#FFFFFF" opacity="0.45"/>
+              <g transform="translate(42, 32)">
+                <rect x="0" y="12" width="115" height="145" rx="14" fill="#FFFFFF" stroke="#1D4636" stroke-width="2.8"/>
+                <line x1="22" y1="40" x2="92" y2="40" stroke="#B5E4CC" stroke-width="3" stroke-linecap="round"/>
+                <line x1="22" y1="62" x2="92" y2="62" stroke="#B5E4CC" stroke-width="3" stroke-linecap="round"/>
+                <line x1="22" y1="84" x2="72" y2="84" stroke="#B5E4CC" stroke-width="3" stroke-linecap="round"/>
+                <circle cx="72" cy="118" r="18" fill="#FFE3EC" stroke="#1D4636" stroke-width="2.2"/>
+                <path d="M65 118 Q72 125 79 118" fill="none" stroke="#1D4636" stroke-width="2" stroke-linecap="round"/>
+              </g>
+              <g transform="translate(182, 48)">
+                <rect x="0" y="0" width="185" height="125" rx="20" fill="#FFFFFF" opacity="0.92"/>
+                <text x="22" y="46" fill="#1D4636" font-family="Mali, sans-serif" font-weight="700" font-size="21">คลังสติ๊กเกอร์ &amp; โน้ต</text>
+                <text x="22" y="76" fill="#4C7563" font-family="Prompt, sans-serif" font-size="14">รวมงานไดคัทสีพาสเทล</text>
+                <rect x="22" y="90" width="112" height="24" rx="12" fill="#D5F2E3"/>
+                <text x="38" y="106" fill="#1D4636" font-family="Prompt, sans-serif" font-weight="600" font-size="12">แตะเพื่อดูกลุ่มงาน &gt;</text>
+              </g>
+            </svg>
+          `;
+
+        case 'banner-fonts':
+          return `
+            <svg viewBox="0 0 400 220" class="w-full h-full object-cover">
+              <rect width="400" height="220" fill="#D5F2E3"/>
+              <rect x="26" y="26" width="348" height="168" rx="24" fill="#FFFFFF" opacity="0.9"/>
+              <rect x="46" y="48" width="112" height="124" rx="18" fill="#E7F7EE"/>
+              <text x="102" y="102" text-anchor="middle" fill="#1D4636" font-family="Mali, sans-serif" font-weight="700" font-size="30">สวัสดี</text>
+              <text x="102" y="142" text-anchor="middle" fill="#387B5E" font-family="Mali, sans-serif" font-weight="700" font-size="28">Aa</text>
+              <text x="180" y="82" fill="#1D4636" font-family="Prompt, sans-serif" font-weight="700" font-size="22">รวมฟอนต์ลายมือน่ารัก</text>
+              <text x="180" y="110" fill="#4C7563" font-family="Prompt, sans-serif" font-size="14">รองรับภาษาไทย &amp; อังกฤษ</text>
+              <rect x="180" y="126" width="128" height="28" rx="14" fill="#387B5E"/>
+              <text x="244" y="144" text-anchor="middle" fill="#FFFFFF" font-family="Prompt, sans-serif" font-weight="600" font-size="12.5">ดูตัวอย่างฟอนต์ &gt;</text>
+            </svg>
+          `;
+
+        case 'group-hippo-desk':
+          return `
+            <svg viewBox="0 0 220 200" class="w-full h-full object-cover">
+              <rect width="220" height="200" fill="#E7F7EE"/>
+              <path d="M0 142 Q110 132 220 145 L220 200 L0 200 Z" fill="#F4FBF7"/>
+              <g transform="translate(132, 32)">
+                <path d="M26 55 Q10 35 16 18 Q28 28 28 52" fill="#A9D6B5" stroke="#4F7A65" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M28 50 Q28 16 42 6 Q48 25 32 50" fill="#BCE2C6" stroke="#4F7A65" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M32 54 Q52 34 62 24 Q58 46 34 56" fill="#A9D6B5" stroke="#4F7A65" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M24 58 Q4 48 2 36 Q18 38 26 56" fill="#BCE2C6" stroke="#4F7A65" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M14 58 L46 58 L41 90 L19 90 Z" fill="#FFFFFF" stroke="#1D4636" stroke-width="2.4" stroke-linejoin="round"/>
+                <rect x="11" y="53" width="38" height="7" rx="3" fill="#D5F2E3" stroke="#1D4636" stroke-width="2.4"/>
+              </g>
+              <g transform="translate(152, 115)">
+                <rect x="10" y="18" width="48" height="12" rx="3" fill="#A9DEC4" stroke="#1D4636" stroke-width="2.2"/>
+                <rect x="6" y="30" width="52" height="12" rx="3" fill="#D5F2E3" stroke="#1D4636" stroke-width="2.2"/>
+                <rect x="14" y="42" width="46" height="12" rx="3" fill="#8ED1B0" stroke="#1D4636" stroke-width="2.2"/>
+                <rect x="-12" y="6" width="22" height="24" rx="4" fill="#FFFFFF" stroke="#1D4636" stroke-width="2.2"/>
+                <path d="M10 11 C16 11, 16 23, 10 23" fill="none" stroke="#1D4636" stroke-width="2.2"/>
+              </g>
+              <g transform="translate(22, 42)">
+                <path d="M35 20 C52 12, 76 16, 86 34 C96 52, 92 84, 78 96 L28 96 C16 86, 14 58, 22 38 C26 28, 30 22, 35 20 Z" fill="#BCE8D0" stroke="#1D4636" stroke-width="2.6"/>
+                <path d="M26 68 C24 50, 42 42, 64 42 C86 42, 96 52, 92 70 C88 88, 76 94, 58 94 C40 94, 28 84, 26 68 Z" fill="#EBF9F1"/>
+                <ellipse cx="36" cy="68" rx="7" ry="4.5" fill="#F8C8DC"/>
+                <ellipse cx="82" cy="68" rx="7" ry="4.5" fill="#F8C8DC"/>
+                <circle cx="46" cy="44" r="2.8" fill="#1D4636"/>
+                <circle cx="74" cy="44" r="2.8" fill="#1D4636"/>
+                <path d="M54 56 Q60 61 66 56" fill="none" stroke="#1D4636" stroke-width="2.2" stroke-linecap="round"/>
+              </g>
+              <g transform="translate(14, 126)">
+                <path d="M8 22 L68 8 L132 22 L72 42 Z" fill="#FFFDF7" stroke="#1D4636" stroke-width="2.5" stroke-linejoin="round"/>
+                <path d="M8 22 L8 30 L72 50 L132 30 L132 22" fill="#F6E6C2" stroke="#1D4636" stroke-width="2.5" stroke-linejoin="round"/>
+                <line x1="68" y1="8" x2="72" y2="42" stroke="#1D4636" stroke-width="2"/>
+              </g>
+            </svg>
+          `;
+
+        case 'group-note-papers':
+          return `
+            <svg viewBox="0 0 220 200" class="w-full h-full object-cover">
+              <rect width="220" height="200" fill="#D5F2E3"/>
+              <g transform="rotate(-10 85 100)">
+                <rect x="28" y="32" width="105" height="132" rx="8" fill="#F4FBF7" stroke="#74B896" stroke-width="2"/>
+              </g>
+              <g transform="rotate(5 110 105)">
+                <rect x="48" y="26" width="112" height="140" rx="8" fill="#FFFDF9" stroke="#539977" stroke-width="2.2"/>
+                <g stroke="#D4EDE0" stroke-width="1.2">
+                  <line x1="68" y1="28" x2="68" y2="164"/>
+                  <line x1="88" y1="28" x2="88" y2="164"/>
+                  <line x1="108" y1="28" x2="108" y2="164"/>
+                  <line x1="128" y1="28" x2="128" y2="164"/>
+                  <line x1="148" y1="28" x2="148" y2="164"/>
+                  <line x1="50" y1="50" x2="158" y2="50"/>
+                  <line x1="50" y1="72" x2="158" y2="72"/>
+                  <line x1="50" y1="94" x2="158" y2="94"/>
+                  <line x1="50" y1="116" x2="158" y2="116"/>
+                  <line x1="50" y1="138" x2="158" y2="138"/>
+                </g>
+              </g>
+              <g transform="translate(106, 32) rotate(6)">
+                <rect x="0" y="0" width="66" height="48" rx="8" fill="#B5E4CC" stroke="#FFFFFF" stroke-width="3"/>
+                <path d="M16 32 C12 32, 10 25, 16 23 C16 16, 28 14, 33 19 C38 14, 50 16, 50 23 C56 24, 56 32, 48 32 Z" fill="#FFFFFF"/>
+              </g>
+              <g transform="translate(46, 116)">
+                <ellipse cx="28" cy="26" rx="22" ry="17" fill="#BCE8D0" stroke="#1D4636" stroke-width="2.2"/>
+                <ellipse cx="16" cy="28" rx="4" ry="2.5" fill="#F8C8DC"/>
+                <ellipse cx="40" cy="28" rx="4" ry="2.5" fill="#F8C8DC"/>
+                <circle cx="21" cy="21" r="1.8" fill="#1D4636"/>
+                <circle cx="35" cy="21" r="1.8" fill="#1D4636"/>
+                <path d="M25 27 Q28 30 31 27" fill="none" stroke="#1D4636" stroke-width="1.8" stroke-linecap="round"/>
+              </g>
+              <g transform="translate(168, 96) rotate(32)">
+                <rect x="0" y="0" width="14" height="72" rx="4" fill="#9EDBB9" stroke="#1D4636" stroke-width="2.2"/>
+                <rect x="0" y="10" width="14" height="8" fill="#FFFFFF" stroke="#1D4636" stroke-width="2"/>
+                <path d="M0 72 L7 86 L14 72 Z" fill="#FFFFFF" stroke="#1D4636" stroke-width="2.2" stroke-linejoin="round"/>
+                <path d="M5 82 L7 86 L9 82 Z" fill="#1D4636"/>
+              </g>
+            </svg>
+          `;
+
+        case 'fsale-meadow':
+          return `
+            <svg viewBox="0 0 220 220" class="w-full h-full object-cover">
+              <defs>
+                <linearGradient id="meadowSky" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#A8E0C3"/>
+                  <stop offset="65%" stop-color="#DFF7EA"/>
+                </linearGradient>
+              </defs>
+              <rect width="220" height="220" fill="url(#meadowSky)"/>
+              <path d="M-10 115 C5 95, 35 95, 48 108 C65 88, 105 92, 118 112 C138 98, 175 102, 185 118 C200 108, 225 112, 230 128 L230 165 L-10 165 Z" fill="#FFFFFF" opacity="0.92"/>
+              <path d="M25 62 C25 52, 38 48, 46 55 C54 45, 74 47, 78 58 C88 59, 88 72, 76 73 L28 73 C16 72, 16 62, 25 62 Z" fill="#FFFFFF" opacity="0.88"/>
+              <path d="M142 46 C142 38, 152 35, 158 40 C165 33, 180 35, 182 44 C190 45, 190 55, 180 56 L144 56 C135 55, 135 46, 142 46 Z" fill="#FFFFFF" opacity="0.85"/>
+              <path d="M-10 155 Q65 128 145 162 T230 158 L230 220 L-10 220 Z" fill="#B8DCAC"/>
+              <path d="M-10 175 Q95 155 230 138 L230 220 L-10 220 Z" fill="#9BC995"/>
+              <g transform="translate(26, 176)">
+                <circle cx="0" cy="-6" r="4" fill="#FFFFFF"/><circle cx="6" cy="0" r="4" fill="#FFFFFF"/><circle cx="0" cy="6" r="4" fill="#FFFFFF"/><circle cx="-6" cy="0" r="4" fill="#FFFFFF"/>
+                <circle cx="0" cy="0" r="3" fill="#F6C85F"/>
+              </g>
+              <g transform="translate(74, 188)">
+                <circle cx="0" cy="-5" r="3.5" fill="#FFFFFF"/><circle cx="5" cy="0" r="3.5" fill="#FFFFFF"/><circle cx="0" cy="5" r="3.5" fill="#FFFFFF"/><circle cx="-5" cy="0" r="3.5" fill="#FFFFFF"/>
+                <circle cx="0" cy="0" r="2.5" fill="#F6C85F"/>
+              </g>
+              <g transform="translate(128, 178)">
+                <circle cx="0" cy="-6" r="4" fill="#FFFFFF"/><circle cx="6" cy="0" r="4" fill="#FFFFFF"/><circle cx="0" cy="6" r="4" fill="#FFFFFF"/><circle cx="-6" cy="0" r="4" fill="#FFFFFF"/>
+                <circle cx="0" cy="0" r="3" fill="#F6C85F"/>
+              </g>
+              <g transform="translate(166, 194)">
+                <circle cx="0" cy="-6.5" r="4.5" fill="#FFFFFF"/><circle cx="6.5" cy="0" r="4.5" fill="#FFFFFF"/><circle cx="0" cy="6.5" r="4.5" fill="#FFFFFF"/><circle cx="-6.5" cy="0" r="4.5" fill="#FFFFFF"/>
+                <circle cx="0" cy="0" r="3.2" fill="#F6C85F"/>
+              </g>
+              <g transform="translate(196, 172)">
+                <circle cx="0" cy="-5" r="3.5" fill="#FFFFFF"/><circle cx="5" cy="0" r="3.5" fill="#FFFFFF"/><circle cx="0" cy="5" r="3.5" fill="#FFFFFF"/><circle cx="-5" cy="0" r="3.5" fill="#FFFFFF"/>
+                <circle cx="0" cy="0" r="2.5" fill="#F6C85F"/>
+              </g>
+              <circle cx="52" cy="166" r="3" fill="#F7A8B8"/>
+              <circle cx="102" cy="170" r="3" fill="#F7A8B8"/>
+              <circle cx="152" cy="162" r="3" fill="#F7A8B8"/>
+            </svg>
+          `;
+
+        case 'fsale-gingham':
+          return `
+            <svg viewBox="0 0 220 220" class="w-full h-full object-cover">
+              <defs>
+                <pattern id="ginghamPattern" width="44" height="44" patternUnits="userSpaceOnUse">
+                  <rect width="44" height="44" fill="#F4FBF7"/>
+                  <rect width="22" height="44" fill="#B5E4CC" opacity="0.65"/>
+                  <rect width="44" height="22" fill="#B5E4CC" opacity="0.65"/>
+                </pattern>
+              </defs>
+              <rect width="220" height="220" fill="url(#ginghamPattern)"/>
+            </svg>
+          `;
+
+        case 'fsale-night-sky':
+          return `
+            <svg viewBox="0 0 220 220" class="w-full h-full object-cover">
+              <defs>
+                <linearGradient id="dreamSky" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#A6C8F8"/>
+                  <stop offset="55%" stop-color="#C8DCF9"/>
+                  <stop offset="100%" stop-color="#F2DDF0"/>
+                </linearGradient>
+              </defs>
+              <rect width="220" height="220" fill="url(#dreamSky)"/>
+              <circle cx="42" cy="38" r="1.5" fill="#FFFFFF" opacity="0.9"/>
+              <circle cx="115" cy="28" r="1.8" fill="#FFFFFF" opacity="0.8"/>
+              <circle cx="82" cy="68" r="1.4" fill="#FFFFFF" opacity="0.8"/>
+              <path d="M168 28 C182 34, 188 52, 178 66 C168 80, 150 82, 138 72 C154 74, 168 64, 170 48 C172 38, 168 28, 168 28 Z" fill="#FFF0B8"/>
+              <path d="M-15 135 C5 112, 42 115, 58 130 C78 110, 118 118, 132 138 C155 122, 195 128, 230 148 L230 220 L-15 220 Z" fill="#E8D8F8" opacity="0.8"/>
+              <path d="M-10 92 C10 75, 45 78, 62 94 C78 82, 105 88, 112 104 C90 116, 40 118, -10 108 Z" fill="#F7E8F6" opacity="0.88"/>
+              <path d="M-15 162 C12 142, 52 144, 74 160 C98 138, 144 142, 166 162 C188 148, 215 152, 230 168 L230 220 L-15 220 Z" fill="#FBEBF7" opacity="0.92"/>
+            </svg>
+          `;
+
+        case 'fsale-daisy':
+          return `
+            <svg viewBox="0 0 220 220" class="w-full h-full object-cover">
+              <rect width="220" height="220" fill="#D5F2E3"/>
+              <path d="M98 220 Q92 165 62 115" fill="none" stroke="#6B9E78" stroke-width="4" stroke-linecap="round"/>
+              <path d="M106 220 Q114 150 132 72" fill="none" stroke="#6B9E78" stroke-width="4.2" stroke-linecap="round"/>
+              <path d="M112 220 Q132 175 162 136" fill="none" stroke="#6B9E78" stroke-width="3.8" stroke-linecap="round"/>
+              <path d="M102 185 Q78 172 72 156 Q94 162 104 180" fill="#7FB088"/>
+              <path d="M116 176 Q142 166 150 150 Q126 154 114 172" fill="#7FB088"/>
+              <g transform="translate(132, 68)">
+                <g fill="#FFFFFF">
+                  <ellipse cx="0" cy="-22" rx="8" ry="16"/>
+                  <ellipse cx="0" cy="22" rx="8" ry="16"/>
+                  <ellipse cx="-22" cy="0" rx="16" ry="8"/>
+                  <ellipse cx="22" cy="0" rx="16" ry="8"/>
+                  <ellipse cx="-15" cy="-15" rx="14" ry="8" transform="rotate(45 -15 -15)"/>
+                  <ellipse cx="15" cy="15" rx="14" ry="8" transform="rotate(45 15 15)"/>
+                  <ellipse cx="15" cy="-15" rx="14" ry="8" transform="rotate(-45 15 -15)"/>
+                  <ellipse cx="-15" cy="15" rx="14" ry="8" transform="rotate(-45 -15 15)"/>
+                </g>
+                <circle cx="0" cy="0" r="10" fill="#F5C445"/>
+              </g>
+              <g transform="translate(58, 112)">
+                <g fill="#FFFFFF">
+                  <ellipse cx="0" cy="-20" rx="7.5" ry="15"/>
+                  <ellipse cx="0" cy="20" rx="7.5" ry="15"/>
+                  <ellipse cx="-20" cy="0" rx="15" ry="7.5"/>
+                  <ellipse cx="20" cy="0" rx="15" ry="7.5"/>
+                  <ellipse cx="-14" cy="-14" rx="13" ry="7.5" transform="rotate(45 -14 -14)"/>
+                  <ellipse cx="14" cy="14" rx="13" ry="7.5" transform="rotate(45 14 14)"/>
+                  <ellipse cx="14" cy="-14" rx="13" ry="7.5" transform="rotate(-45 14 -14)"/>
+                  <ellipse cx="-14" cy="14" rx="13" ry="7.5" transform="rotate(-45 -14 14)"/>
+                </g>
+                <circle cx="0" cy="0" r="9.5" fill="#F5C445"/>
+              </g>
+              <g transform="translate(164, 134) scale(0.85)">
+                <g fill="#FFFFFF">
+                  <ellipse cx="0" cy="-20" rx="7.5" ry="15"/>
+                  <ellipse cx="0" cy="20" rx="7.5" ry="15"/>
+                  <ellipse cx="-20" cy="0" rx="15" ry="7.5"/>
+                  <ellipse cx="20" cy="0" rx="15" ry="7.5"/>
+                  <ellipse cx="-14" cy="-14" rx="13" ry="7.5" transform="rotate(45 -14 -14)"/>
+                  <ellipse cx="14" cy="14" rx="13" ry="7.5" transform="rotate(45 14 14)"/>
+                  <ellipse cx="14" cy="-14" rx="13" ry="7.5" transform="rotate(-45 14 -14)"/>
+                  <ellipse cx="-14" cy="14" rx="13" ry="7.5" transform="rotate(-45 -14 14)"/>
+                </g>
+                <circle cx="0" cy="0" r="9.5" fill="#F5C445"/>
+              </g>
+            </svg>
+          `;
+
+        case 'sample-sticker-sheet':
+          return `
+            <svg viewBox="0 0 360 260" class="w-full h-full object-cover">
+              <rect width="360" height="260" fill="#E7F7EE"/>
+              <rect x="24" y="20" width="312" height="220" rx="20" fill="#FFFFFF" stroke="#B5E4CC" stroke-width="2"/>
+              <text x="180" y="52" text-anchor="middle" fill="#1D4636" font-family="Mali, sans-serif" font-weight="700" font-size="16">Annter Shop Sweet Sticker Sheet #01</text>
+              <circle cx="88" cy="110" r="32" fill="#FFE8F0" stroke="#1D4636" stroke-width="2" stroke-dasharray="4 3"/>
+              <text x="88" y="115" text-anchor="middle" font-size="24">🍓</text>
+              <circle cx="180" cy="110" r="32" fill="#E7F7EE" stroke="#1D4636" stroke-width="2" stroke-dasharray="4 3"/>
+              <text x="180" y="116" text-anchor="middle" font-size="24">🦖</text>
+              <circle cx="272" cy="110" r="32" fill="#FFF6D6" stroke="#1D4636" stroke-width="2" stroke-dasharray="4 3"/>
+              <text x="272" y="115" text-anchor="middle" font-size="24">🧁</text>
+              <rect x="62" y="164" width="105" height="46" rx="14" fill="#D5F2E3" stroke="#1D4636" stroke-width="2"/>
+              <text x="114" y="192" text-anchor="middle" fill="#1D4636" font-family="Mali, sans-serif" font-weight="700" font-size="14">Good Vibes ✿</text>
+              <rect x="192" y="164" width="105" height="46" rx="14" fill="#FDE8F0" stroke="#1D4636" stroke-width="2"/>
+              <text x="244" y="192" text-anchor="middle" fill="#1D4636" font-family="Mali, sans-serif" font-weight="700" font-size="14">Sweet Day ♡</text>
+            </svg>
+          `;
+
+        case 'sample-planner-spread':
+        case 'sample-memo-pack':
+          return `
+            <svg viewBox="0 0 360 260" class="w-full h-full object-cover">
+              <rect width="360" height="260" fill="#D5F2E3"/>
+              <rect x="30" y="24" width="300" height="212" rx="16" fill="#FFFDF9" stroke="#74B896" stroke-width="2.5"/>
+              <line x1="180" y1="24" x2="180" y2="236" stroke="#B5E4CC" stroke-width="2" stroke-dasharray="5 4"/>
+              <rect x="48" y="44" width="112" height="26" rx="8" fill="#D5F2E3"/>
+              <text x="104" y="61" text-anchor="middle" fill="#1D4636" font-family="Prompt, sans-serif" font-weight="600" font-size="12">Weekly Note</text>
+              <rect x="48" y="82" width="112" height="128" rx="10" fill="#F4FBF7" stroke="#D4EDE0" stroke-width="1.5"/>
+              <rect x="200" y="44" width="112" height="76" rx="10" fill="#FFF4E6" stroke="#F5D7B0" stroke-width="1.5"/>
+              <rect x="200" y="132" width="112" height="78" rx="10" fill="#E7F7EE" stroke="#B5E4CC" stroke-width="1.5"/>
+              <text x="256" y="176" text-anchor="middle" fill="#387B5E" font-family="Mali, sans-serif" font-weight="700" font-size="14">Annter Note</text>
+            </svg>
+          `;
+
+        default:
+          return `
+            <svg viewBox="0 0 360 260" class="w-full h-full object-cover">
+              <rect width="360" height="260" fill="#E7F7EE"/>
+              <rect x="42" y="26" width="276" height="208" rx="22" fill="#FFFFFF" stroke="#B5E4CC" stroke-width="2.5"/>
+              <circle cx="180" cy="112" r="46" fill="#D5F2E3"/>
+              <text x="180" y="122" text-anchor="middle" font-size="36">🎀</text>
+              <text x="180" y="182" text-anchor="middle" fill="#1D4636" font-family="Prompt, sans-serif" font-weight="700" font-size="16">ภาพตัวอย่างองค์ประกอบเพิ่มเติม</text>
+              <text x="180" y="204" text-anchor="middle" fill="#4C7563" font-family="Prompt, sans-serif" font-size="12.5">ไฟล์ PNG พื้นหลังโปร่งใส คมชัดสูง 300 DPI</text>
+            </svg>
+          `;
+      }
+    }
+
+    function getFontSpecimenHTML(fontItem, sampleObj) {
+      const isPangram = sampleObj.sheetMode === 'pangram';
+      return `
+        <div class="w-full bg-gradient-to-b from-[#E7F7EE] to-[#F4FBF7] p-5 sm:p-6 text-center select-none">
+          <div class="bg-white rounded-2xl border border-hippo-cardBorder p-5 shadow-xs space-y-3">
+            <div class="inline-block bg-hippo-pill text-hippo-navy text-xs font-bold px-3 py-1 rounded-full">
+              ${fontItem.name} (${fontItem.lang})
+            </div>
+            ${
+              !isPangram
+                ? `
+                  <div class="${fontItem.fontClass} text-hippo-navy py-2">
+                    <div class="text-[44px] sm:text-[52px] leading-tight">สวัสดี Annter Shop</div>
+                    <div class="text-[36px] sm:text-[42px] text-hippo-btn leading-tight mt-1">Aa Bb Cc 123</div>
+                  </div>
+                  <div class="${fontItem.fontClass} text-sm sm:text-base text-hippo-navyMuted border-t border-hippo-cardBorder pt-3">
+                    ก ข ค ง จ ฉ ช ซ ฌ ญ ฎ ฏ ฐ ฑ ฒ ณ ด ต ถ ท ธ น บ ป ผ ฝ พ ฟ ภ ม ย ร ล ว ศ ษ ส ห ฬ อ ฮ
+                  </div>
+                `
+                : `
+                  <div class="${fontItem.fontClass} text-hippo-navy space-y-2 py-2 text-left px-2">
+                    <p class="text-xl sm:text-2xl">“วันนี้อากาศแจ่มใส แวะมาจดบันทึกและตกแต่งใบงานน่ารักๆ กับ Annter Shop กันนะ”</p>
+                    <p class="text-lg sm:text-xl text-hippo-btn">The quick brown fox jumps over the lazy dog.</p>
+                    <p class="text-base text-hippo-navyMuted">๐ ๑ ๒ ๓ ๔ ๕ ๖ ๗ ๘ ๙ • 0 1 2 3 4 5 6 7 8 9 ! ? @ # ♡ ☆</p>
+                  </div>
+                `
+            }
+          </div>
+        </div>
+      `;
+    }
+
+    function renderBrandHeader() {
+      const h = SITE_DATA.brandHeader || DEFAULT_SITE_DATA.brandHeader;
+      document.getElementById('header-brand-name').textContent = h.name || 'Annter Shop';
+      document.getElementById('header-brand-badge').textContent = h.badge || 'Official';
+      document.getElementById('header-brand-subtitle').textContent = h.subtitle || '';
+      if (h.logoUrl) {
+        document.getElementById('header-logo-img').src = h.logoUrl;
+      }
+      if (h.discImageUrl) {
+        document.getElementById('music-disc-img').src = h.discImageUrl;
+      }
+      renderMusicTrackList();
+    }
+
+    function renderHomeBanners() {
+      const track = document.getElementById('banner-track');
+      const dotsContainer = document.getElementById('banner-dots');
+      const banners = SITE_DATA.banners || [];
+
+      if (banners.length <= 1) {
+        track.classList.remove('pr-[14%]');
+        dotsContainer.classList.add('hidden');
+      } else {
+        track.classList.add('pr-[14%]');
+        dotsContainer.classList.remove('hidden');
+      }
+
+      track.innerHTML = banners.map((b, index) => `
+        <div
+          onclick="handleBannerClick(${index})"
+          role="button"
+          tabindex="0"
+          aria-label="${b.title}"
+          onkeydown="if(event.key==='Enter') handleBannerClick(${index})"
+          class="snap-start flex-shrink-0 ${banners.length > 1 ? 'w-[88%]' : 'w-full'} rounded-[22px] overflow-hidden border border-hippo-cardBorder shadow-hippo-card bg-[#D5F2E3] aspect-[16/9] relative cursor-pointer group transition-transform active:scale-[0.99]"
+        >
+          ${
+            b.imageUrl
+              ? `<img
+                   src="${b.imageUrl}"
+                   alt="${b.title}"
+                   class="w-full h-full object-cover"
+                   onerror="this.onerror=null;this.src='https://placehold.co/800x450/D5F2E3/1D4636?text=Annter+Shop+Banner';"
+                 />`
+              : getArtworkSVG(b.svgType)
+          }
+          ${
+            isAdminMode
+              ? `<button
+                   type="button"
+                   onclick="event.stopPropagation(); openBannerAdminModal(${index});"
+                   class="absolute top-2.5 right-2.5 bg-amber-100 hover:bg-amber-200 text-amber-950 border border-amber-300 text-xs font-bold px-3 py-1 rounded-full shadow-md z-10"
+                 >
+                   ✏️ Edit Banner
+                 </button>`
+              : ''
+          }
+        </div>
+      `).join('');
+
+      if (banners.length > 1) {
+        dotsContainer.innerHTML = banners.map((_, idx) => `
+          <button
+            type="button"
+            onclick="scrollToBanner(${idx})"
+            aria-label="Go to banner ${idx + 1}"
+            id="banner-dot-${idx}"
+            class="w-2.5 h-2.5 rounded-full transition-all ${
+              idx === 0
+                ? 'bg-hippo-btn scale-110'
+                : 'bg-white border-[1.8px] border-hippo-btn/70 hover:bg-hippo-pill'
+            }"
+          ></button>
+        `).join('');
+
+        track.onscroll = () => {
+          const scrollLeft = track.scrollLeft;
+          const cardWidth = track.firstElementChild ? track.firstElementChild.offsetWidth + 12 : 1;
+          const activeIndex = Math.round(scrollLeft / cardWidth);
+          banners.forEach((_, idx) => {
+            const dot = document.getElementById(`banner-dot-${idx}`);
+            if (!dot) return;
+            if (idx === activeIndex) {
+              dot.className = 'w-2.5 h-2.5 rounded-full transition-all bg-hippo-btn scale-110';
+            } else {
+              dot.className = 'w-2.5 h-2.5 rounded-full transition-all bg-white border-[1.8px] border-hippo-btn/70 hover:bg-hippo-pill';
+            }
+          });
+        };
+      }
+    }
+
+    function scrollToBanner(index) {
+      const track = document.getElementById('banner-track');
+      const cards = track.children;
+      if (cards[index]) {
+        track.scrollTo({
+          left: cards[index].offsetLeft - cards[0].offsetLeft,
+          behavior: 'smooth'
+        });
+      }
+    }
+
+    function startBannerAutoplay() {
+      const track = document.getElementById('banner-track');
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+      let resumeAfter = 0;
+      function pauseAfterInteraction() {
+        resumeAfter = performance.now() + 5000;
+      }
+
+      track.addEventListener('pointerdown', pauseAfterInteraction);
+      track.addEventListener('pointerup', pauseAfterInteraction);
+      track.addEventListener('wheel', pauseAfterInteraction, { passive: true });
+      document.getElementById('banner-dots').addEventListener('click', pauseAfterInteraction);
+
+      window.setInterval(() => {
+        const cards = track.children;
+        if (cards.length < 2 || !track.clientWidth || document.hidden || isAdminMode ||
+            reducedMotion.matches || document.querySelector('.nh-intro[open]') ||
+            track.matches(':hover') || track.querySelector(':focus-visible') ||
+            performance.now() < resumeAfter) return;
+
+        const distance = cards[1].offsetLeft - cards[0].offsetLeft;
+        if (distance <= 0) return;
+        const current = Math.round(track.scrollLeft / distance);
+        scrollToBanner((current + 1) % cards.length);
+      }, 4500);
+    }
+
+    function handleBannerClick(index) {
+      const banner = SITE_DATA.banners[index];
+      if (!banner) return;
+      if (banner.actionTab) {
+        switchTab(banner.actionTab);
+        showToast(`เปิดหน้า "${getTabDisplayName(banner.actionTab)}"`);
+      } else if (banner.linkUrl) {
+        window.open(banner.linkUrl, '_blank', 'noopener,noreferrer');
+      }
+    }
+
+    function getContactIconSVG(id) {
+      const cleanId = (id || '').toLowerCase();
+      if (cleanId.includes('line')) {
+        return `
+          <div class="w-6 h-6 rounded-full bg-[#06C755] flex items-center justify-center text-white flex-shrink-0">
+            <span class="font-sans font-extrabold text-[7.5px] tracking-tighter leading-none">LINE</span>
+          </div>
+        `;
+      }
+      if (cleanId.includes('insta') || cleanId.includes('ig')) {
+        return `
+          <div class="w-6 h-6 rounded-full bg-gradient-to-tr from-[#F58529] via-[#DD2A7B] to-[#8134AF] flex items-center justify-center text-white flex-shrink-0">
+            <svg class="w-3.5 h-3.5 stroke-[2.2]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <rect x="3" y="3" width="18" height="18" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+            </svg>
+          </div>
+        `;
+      }
+      return `
+        <div class="w-6 h-6 rounded-full bg-[#1877F2] flex items-center justify-center text-white flex-shrink-0">
+          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+            <path d="M15.12 5.32H17V2.14A26.11 26.11 0 0 0 14.26 2c-2.72 0-4.58 1.66-4.58 4.7v2.62H6.61v3.56h3.07V22h3.68v-9.12h3.06l.46-3.56h-3.52V6.65c0-1.05.29-1.73 1.76-1.73Z"/>
+          </svg>
+        </div>
+      `;
+    }
+
+    function renderContacts() {
+      const container = document.getElementById('contact-grid');
+      container.innerHTML = SITE_DATA.contacts.map((c, idx) => {
+        const hasLink = Boolean(c.url && c.url.trim() !== '');
+        return `
+          <div class="relative">
+            <button
+              type="button"
+              onclick="handleContactClick(${idx})"
+              class="w-full bg-white border border-hippo-cardBorder rounded-full py-2 px-3 flex items-center justify-center gap-1.5 shadow-xs transition-all ${
+                hasLink
+                  ? 'hover:bg-hippo-softBlue/60 hover:border-hippo-btn/50 active:scale-[0.98] cursor-pointer'
+                  : 'opacity-75 hover:bg-hippo-softBlue/40 cursor-pointer'
+              }"
+            >
+              ${getContactIconSVG(c.id || c.name)}
+              <span class="text-[13px] font-medium text-hippo-navy leading-none truncate">${c.name}</span>
+            </button>
+            ${
+              isAdminMode
+                ? `<button
+                     type="button"
+                     onclick="event.stopPropagation(); openContactAdminModal(${idx});"
+                     class="absolute -top-2 -right-1 w-6 h-6 rounded-full bg-amber-200 hover:bg-amber-300 text-amber-950 border border-amber-400 text-[11px] flex items-center justify-center shadow"
+                     title="แก้ไขช่องทางติดต่อ"
+                   >✏️</button>`
+                : ''
+            }
+          </div>
+        `;
+      }).join('');
+    }
+
+    function handleContactClick(index) {
+      const item = SITE_DATA.contacts[index];
+      if (!item) return;
+      if (!item.url || item.url.trim() === '') {
+        showToast(`ช่องทาง ${item.name} ยังไม่ได้ระบุลิงก์ (แก้ไขได้ในโหมดแอดมิน)`);
+        return;
+      }
+      if (item.url.startsWith('#')) {
+        switchTab(item.url.replace('#', ''));
+      } else {
+        window.open(item.url, '_blank', 'noopener,noreferrer');
+      }
+    }
+
+    // สร้างปุ่มคอลัมน์หน้าหลักแบบใส่รูปขนาด 1:1 และกดเชื่อมไปยังลิงก์นั้นๆ ได้ทันที
+    function renderOtherLinks() {
+      const container = document.getElementById('other-links-grid');
+      container.innerHTML = SITE_DATA.otherLinks.map((link, idx) => {
+        const hasTarget = Boolean((link.url && link.url.trim() !== '') || link.actionTab);
+        const visualContent = link.imageUrl
+          ? `<img src="${link.imageUrl}" alt="${link.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/400x400/D5F2E3/1D4636?text=1:1+Image';"/>`
+          : `<div class="w-full h-full relative overflow-hidden">
+               ${getArtworkSVG(link.coverArt || (idx % 2 === 0 ? 'fsale-meadow' : 'group-hippo-desk'))}
+             </div>`;
+
+        return `
+          <div class="relative w-full">
+            <button
+              type="button"
+              ${hasTarget ? `onclick="handleOtherLinkClick(${idx})"` : 'disabled'}
+              class="group w-full bg-white border border-hippo-cardBorder rounded-[24px] p-2.5 flex flex-col items-center text-center shadow-hippo-card transition-all ${
+                hasTarget
+                  ? 'hover:border-hippo-btn/60 active:scale-[0.98] cursor-pointer'
+                  : 'opacity-50 cursor-not-allowed'
+              }"
+            >
+              <div class="w-full aspect-square rounded-[18px] overflow-hidden bg-hippo-softBlue border border-hippo-cardBorder/80 mb-2">
+                ${visualContent}
+              </div>
+              <span class="text-[14.5px] font-bold text-hippo-navy leading-snug line-clamp-1">${link.title}</span>
+              ${
+                link.subtitle
+                  ? `<span class="text-[11.5px] text-hippo-navyMuted leading-tight line-clamp-1 mt-0.5">${link.subtitle}</span>`
+                  : ''
+              }
+            </button>
+            ${
+              isAdminMode
+                ? `<button
+                     type="button"
+                     onclick="event.stopPropagation(); openOtherLinkAdminModal(${idx});"
+                     class="absolute top-2 right-2 bg-amber-100 hover:bg-amber-200 text-amber-950 border border-amber-300 text-[11px] font-bold px-2.5 py-1 rounded-full shadow z-10"
+                   >✏️ แก้ไข</button>`
+                : ''
+            }
+          </div>
+        `;
+      }).join('');
+    }
+
+    function handleOtherLinkClick(index) {
+      const link = SITE_DATA.otherLinks[index];
+      if (!link) return;
+      if (link.actionTab && (!link.url || link.url.startsWith('#'))) {
+        switchTab(link.actionTab);
+        showToast(`เปิดหน้า "${getTabDisplayName(link.actionTab)}"`);
+      } else if (link.url) {
+        if (link.url.startsWith('#')) {
+          switchTab(link.url.replace('#', ''));
+        } else {
+          window.open(link.url, '_blank', 'noopener,noreferrer');
+        }
+      }
+    }
+
+    function renderGroups(isPartner = false) {
+      const list = document.getElementById(isPartner ? 'partners-list' : 'groups-list');
+      const groups = isPartner ? SITE_DATA.partners : SITE_DATA.groups;
+      const openDetails = isPartner ? 'openPartnerCategories' : 'openGroupSubItemsModal';
+      list.innerHTML = groups.map((item, idx) => `
+        <article
+          onclick="${openDetails}(${idx})"
+          role="button"
+          tabindex="0"
+          onkeydown="if(event.target === this && event.key==='Enter') ${openDetails}(${idx})"
+          class="relative bg-white border border-hippo-cardBorder rounded-[24px] p-3.5 sm:p-4 shadow-hippo-card flex items-center gap-3.5 sm:gap-4 cursor-pointer hover:border-hippo-btn/50 transition-all active:scale-[0.99]"
+        >
+          ${
+            isAdminMode
+              ? `<button
+                   type="button"
+                   onclick="event.stopPropagation(); openGroupAdminModal(${idx}, ${isPartner});"
+                   class="absolute top-2.5 right-2.5 bg-amber-100 hover:bg-amber-200 text-amber-950 border border-amber-300 text-xs font-bold px-2.5 py-0.5 rounded-full shadow z-10"
+                 >✏️ แก้ไข${isPartner ? 'เครือ' : 'กลุ่ม'}</button>`
+              : ''
+          }
+          <div class="w-[46%] sm:w-[44%] aspect-[11/10] rounded-[18px] overflow-hidden bg-hippo-softBlue flex-shrink-0 border border-hippo-cardBorder/60">
+            ${
+              item.imageUrl
+                ? `<img src="${item.imageUrl}" alt="${item.title}" class="w-full h-full object-cover" onerror="this.onerror=null;this.src='https://placehold.co/300x260/D5F2E3/1D4636?text=Group';"/>`
+                : getArtworkSVG(item.coverArt)
+            }
+          </div>
+
+          <div class="flex-1 min-w-0 flex flex-col items-center text-center py-1">
+            <h2 class="text-[19px] sm:text-[21px] font-bold text-hippo-navy leading-snug whitespace-pre-line">
+              ${item.title}
+            </h2>
+            <p class="text-[13.5px] text-hippo-navyMuted leading-snug mt-2 whitespace-pre-line">
+              ${item.shortDesc}
+            </p>
+            <span class="mt-3.5 inline-flex items-center justify-center gap-1.5 px-4 py-1.5 rounded-full border-[1.6px] border-hippo-btn text-hippo-navy font-semibold text-[13.5px] bg-white hover:bg-hippo-pill/50 transition">
+              <span>ดูเพิ่มเติม</span>
+              <svg class="w-3.5 h-3.5 stroke-[2.5]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+              </svg>
+            </span>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    function escapeCatalogText(value) {
+      return String(value ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+
+    function renderCatalogItem(sub, coverArt, editAction) {
+      return `
+        <div class="group-subitem-card relative bg-white rounded-[26px] p-3.5 sm:p-4 border border-hippo-cardBorder shadow-hippo-card flex items-start gap-3.5">
+          ${
+            isAdminMode
+              ? `<button
+                   type="button"
+                   onclick="event.stopPropagation(); ${editAction};"
+                   class="absolute top-2.5 right-2.5 bg-amber-100 hover:bg-amber-200 text-amber-950 border border-amber-300 text-[11px] font-bold px-2.5 py-0.5 rounded-full shadow z-10"
+                 >✏️ แก้ไข</button>`
+              : ''
+          }
+          <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden bg-hippo-softBlue border border-hippo-cardBorder flex-shrink-0 mt-0.5">
+            ${
+              sub.imageUrl
+                ? `<img src="${escapeCatalogText(sub.imageUrl)}" alt="${escapeCatalogText(sub.name)}" class="w-full h-full object-cover" onerror="this.onerror=null;this.src='https://placehold.co/160x160/D5F2E3/1D4636?text=Group';"/>`
+                : getArtworkSVG(sub.art || coverArt)
+            }
+          </div>
+
+          <div class="flex-1 min-w-0 flex flex-col">
+            <div class="flex items-center gap-1.5 flex-wrap pr-12">
+              <h4 class="text-[14.5px] sm:text-[15.5px] font-bold text-hippo-navy leading-snug">
+                ${escapeCatalogText(sub.name)}
+              </h4>
+              <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-hippo-pill text-hippo-btn border border-hippo-pillBorder">
+                ราคา ${escapeCatalogText(sub.price)}
+              </span>
+            </div>
+            <p class="text-[12px] text-hippo-navyMuted leading-snug mt-1 whitespace-pre-line break-words">
+              ${escapeCatalogText(sub.detail)}
+            </p>
+            <div class="mt-2.5 flex justify-end">
+              <a
+                href="${escapeCatalogText(/^https?:\/\//i.test(sub.driveUrl || '') ? sub.driveUrl : 'https://drive.google.com')}"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-hippo-btn hover:bg-hippo-btnHover active:scale-95 text-white text-[12px] font-semibold transition shadow-2xs"
+              >
+                <svg class="w-3.5 h-3.5 stroke-[2.2]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+                <span>ดูตัวอย่าง (Drive)</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function openGroupSubItemsModal(groupIndex) {
+      activeGroupModalIndex = groupIndex;
+      const group = SITE_DATA.groups[groupIndex];
+      if (!group) return;
+
+      document.getElementById('group-subitems-title').textContent = group.title.replace(/\n/g, ' ');
+
+      const listEl = document.getElementById('group-subitems-list');
+      const subItems = group.subItems || [];
+
+      listEl.innerHTML = subItems.length
+        ? subItems.map((sub, sIdx) =>
+            renderCatalogItem(sub, group.coverArt, `openSubItemAdminModal(${groupIndex}, ${sIdx})`)
+          ).join('')
+        : '<p class="bg-white rounded-[24px] p-5 text-center text-sm text-hippo-navyMuted border border-hippo-cardBorder">ยังไม่มีรายการ</p>';
+
+      const mainView = document.getElementById('groups-main-view');
+      const detailView = document.getElementById('groups-detail-view');
+      if (mainView && detailView) {
+        mainView.classList.add('hidden');
+        detailView.classList.remove('hidden');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
+
+    function closeGroupDetailPage(isPartner = false) {
+      const mainView = document.getElementById(isPartner ? 'partners-main-view' : 'groups-main-view');
+      const detailView = document.getElementById(isPartner ? 'partners-detail-view' : 'groups-detail-view');
+      if (mainView && detailView) {
+        detailView.classList.add('hidden');
+        mainView.classList.remove('hidden');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
+
+    function openPartnerCategories(index, scroll = true) {
+      const partner = SITE_DATA.partners[index];
+      if (!partner) return;
+
+      activePartnerIndex = index;
+      document.getElementById('partner-categories-title').textContent = partner.title;
+      const list = document.getElementById('partner-categories-list');
+      const openCategories = scroll ? [] : Array.from(list.querySelectorAll('details')).map(card => card.open);
+      const categories = partner.categories || [];
+      list.innerHTML = categories.map((category, categoryIndex) => `
+        <details ${openCategories[categoryIndex] ? 'open' : ''} class="relative bg-white rounded-[26px] p-4 border border-hippo-cardBorder shadow-hippo-card">
+          <summary class="cursor-pointer text-[15px] font-bold text-hippo-navy break-words ${isAdminMode ? 'pr-20' : ''}">${escapeCatalogText(category.name)}</summary>
+          ${isAdminMode ? `<button type="button" onclick="openPartnerCategoryAdminModal(${categoryIndex})"
+            class="absolute top-2.5 right-2.5 bg-amber-100 text-amber-950 border border-amber-300 text-xs font-bold px-2.5 py-1 rounded-full">✏️ แก้ไข</button>` : ''}
+          ${category.detail ? `<p class="mt-2 text-[12px] text-hippo-navyMuted whitespace-pre-wrap break-words">${escapeCatalogText(category.detail)}</p>` : ''}
+          <div class="mt-3 space-y-3">
+            ${(category.subItems || []).map((sub, itemIndex) =>
+              renderCatalogItem(sub, partner.coverArt, `openSubItemAdminModal(${index}, ${itemIndex}, ${categoryIndex})`)
+            ).join('')}
+            ${!(category.subItems || []).length ? '<p class="text-xs text-hippo-navyMuted">ยังไม่มีรายการ</p>' : ''}
+            ${isAdminMode ? `<button type="button" onclick="openSubItemAdminModal(${index}, -1, ${categoryIndex})"
+              class="bg-amber-100 text-amber-950 border border-amber-300 rounded-full px-3 py-1 text-xs font-bold">+ เพิ่มรายการ</button>` : ''}
+          </div>
+        </details>
+      `).join('');
+      if (!categories.length) {
+        list.innerHTML = '<p class="bg-white rounded-[24px] p-5 text-center text-sm text-hippo-navyMuted border border-hippo-cardBorder">ยังไม่มีหมวดหมู่</p>';
+      }
+      document.getElementById('partners-main-view').classList.add('hidden');
+      document.getElementById('partners-detail-view').classList.remove('hidden');
+      if (scroll) window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function getFontCoverGraphicHTML(font) {
+      if (font.imageUrl && font.imageUrl.trim() !== '') {
+        return `<img src="${font.imageUrl}" alt="${font.name}" class="w-full h-full object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x320/D5F2E3/1D4636?text=Font+Image';"/>`;
+      }
+      return `
+        <svg viewBox="0 0 280 210" class="w-full h-full object-cover">
+          <defs>
+            <linearGradient id="fontCardBg-${font.id}" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#D5F2E3"/>
+              <stop offset="100%" stop-color="#F4FBF7"/>
+            </linearGradient>
+          </defs>
+          <rect width="280" height="210" fill="url(#fontCardBg-${font.id})"/>
+          <rect x="14" y="14" width="252" height="182" rx="20" fill="#FFFFFF" stroke="#B5E4CC" stroke-width="2"/>
+          <circle cx="42" cy="40" r="5" fill="#B5E4CC"/>
+          <circle cx="58" cy="40" r="5" fill="#FFE0EB"/>
+          <text x="140" y="98" text-anchor="middle" fill="#1D4636" font-family="Mali, Itim, Prompt, sans-serif" font-weight="700" font-size="36">สวัสดี Aa</text>
+          <text x="140" y="135" text-anchor="middle" fill="#387B5E" font-family="Prompt, sans-serif" font-weight="600" font-size="16">${font.name}</text>
+          <rect x="75" y="150" width="130" height="24" rx="12" fill="#E7F7EE"/>
+          <text x="140" y="166" text-anchor="middle" fill="#4C7563" font-family="Prompt, sans-serif" font-size="11.5">แตะเพื่อดูรูปตัวอย่าง</text>
+        </svg>
+      `;
+    }
+
+    let activeFontCategory = 'ทั้งหมด';
+
+    function selectFontCategory(cat) {
+      activeFontCategory = cat;
+      renderFonts();
+    }
+
+    function renderFonts() {
+      const catBar = document.getElementById('font-categories-bar');
+      const list = document.getElementById('fonts-list');
+      const allFonts = SITE_DATA.fonts || [];
+
+      const categories = ['ทั้งหมด'];
+      (SITE_DATA.fontCategories || []).forEach((c) => {
+        if (c && !categories.includes(c)) categories.push(c);
+      });
+      allFonts.forEach((f) => {
+        const c = (f.category || 'ทั่วไป').trim();
+        if (c && !categories.includes(c)) categories.push(c);
+      });
+
+      if (!categories.includes(activeFontCategory)) {
+        activeFontCategory = 'ทั้งหมด';
+      }
+
+      if (catBar) {
+        catBar.innerHTML = categories.map((cat) => {
+          const isActive = cat === activeFontCategory;
+          return `
+            <button
+              type="button"
+              onclick="selectFontCategory('${cat.replace(/'/g, "\\'")}')"
+              class="px-3.5 py-1.5 rounded-full text-xs font-bold whitespace-nowrap transition-all ${
+                isActive
+                  ? 'bg-hippo-btn text-white shadow-2xs'
+                  : 'bg-white text-hippo-navyMuted border border-hippo-cardBorder hover:bg-hippo-pill/50 hover:text-hippo-navy'
+              }"
+            >
+              ${cat}
+            </button>
+          `;
+        }).join('');
+      }
+
+      const filteredFonts = allFonts
+        .map((f, originalIdx) => Object.assign({}, f, { _originalIdx: originalIdx }))
+        .filter((f) => activeFontCategory === 'ทั้งหมด' || (f.category || 'ทั่วไป').trim() === activeFontCategory);
+
+      if (filteredFonts.length === 0) {
+        list.innerHTML = `
+          <div class="bg-white border border-hippo-cardBorder rounded-[24px] p-6 text-center text-sm text-hippo-navyMuted">
+            ยังไม่มีรายการฟอนต์ในหมวดหมู่นี้
+          </div>
+        `;
+        return;
+      }
+
+      list.innerHTML = filteredFonts.map((font) => {
+        const idx = font._originalIdx;
+        return `
+          <article
+            onclick="openPreviewModal('fonts', ${idx})"
+            role="button"
+            tabindex="0"
+            onkeydown="if(event.key==='Enter') openPreviewModal('fonts', ${idx})"
+            class="relative bg-white border border-hippo-cardBorder rounded-[24px] p-3.5 sm:p-4 shadow-hippo-card flex items-center gap-3.5 sm:gap-4 cursor-pointer hover:border-hippo-btn/50 transition-all active:scale-[0.99]"
+          >
+            ${
+              isAdminMode
+                ? `<button
+                     type="button"
+                     onclick="event.stopPropagation(); openFontAdminModal(${idx});"
+                     class="absolute top-2.5 right-2.5 bg-amber-100 hover:bg-amber-200 text-amber-950 border border-amber-300 text-xs font-bold px-2.5 py-0.5 rounded-full shadow z-10"
+                   >✏️ แก้ไขฟอนต์</button>`
+                : ''
+            }
+            <div class="w-[45%] sm:w-[44%] aspect-[4/3] rounded-[18px] bg-[#E7F7EE] overflow-hidden border border-hippo-cardBorder/80 flex items-center justify-center flex-shrink-0 select-none">
+              ${getFontCoverGraphicHTML(font)}
+            </div>
+
+            <div class="flex-1 min-w-0 flex flex-col items-center text-center py-0.5">
+              <span class="inline-block text-[10.5px] font-bold bg-hippo-pill text-hippo-btn px-2.5 py-0.5 rounded-full border border-hippo-pillBorder mb-1">
+                ${font.category || 'ฟอนต์ลายมือ'}
+              </span>
+              <h2 class="text-[17.5px] sm:text-[19px] font-bold text-hippo-navy leading-snug">
+                ${font.name}
+              </h2>
+              <p class="text-[12.5px] font-medium text-hippo-navy mt-0.5">
+                ${font.lang}
+              </p>
+              <p class="text-[11.5px] text-hippo-navyMuted mt-0.5 line-clamp-1">
+                ${font.shortDesc}
+              </p>
+              <span class="mt-2.5 inline-flex items-center justify-center gap-1.5 px-4 py-1 rounded-full border-[1.5px] border-hippo-btn text-hippo-navy font-semibold text-[12.5px] bg-white hover:bg-hippo-pill/50 transition">
+                <span>ดูเพิ่มเติม</span>
+                <svg class="w-3.5 h-3.5 stroke-[2.5]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                </svg>
+              </span>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    let activePaymentTab = 'bank';
+
+    function switchPaymentTab(tabType) {
+      activePaymentTab = tabType === 'wallet' ? 'wallet' : 'bank';
+      renderBankAccounts();
+    }
+
+    function renderBankAccounts() {
+      const container = document.getElementById('bank-accounts-container');
+      const allAccounts = SITE_DATA.bankAccounts || [];
+
+      const bankList = [];
+      const walletList = [];
+
+      allAccounts.forEach((acc, originalIdx) => {
+        const isWallet = acc.category === 'wallet' || /wallet|วอเลต|truemoney|ทรูมันนี่/i.test(acc.bankName || '');
+        const itemWithIndex = Object.assign({}, acc, { _originalIdx: originalIdx });
+        if (isWallet) {
+          walletList.push(itemWithIndex);
+        } else {
+          bankList.push(itemWithIndex);
+        }
+      });
+
+      const countBankEl = document.getElementById('pay-count-bank');
+      const countWalletEl = document.getElementById('pay-count-wallet');
+      if (countBankEl) countBankEl.textContent = bankList.length;
+      if (countWalletEl) countWalletEl.textContent = walletList.length;
+
+      const bankTabBtn = document.getElementById('pay-tab-bank');
+      const walletTabBtn = document.getElementById('pay-tab-wallet');
+      if (bankTabBtn && walletTabBtn) {
+        if (activePaymentTab === 'bank') {
+          bankTabBtn.className = 'py-2 px-3 rounded-full text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-1.5 bg-hippo-btn text-white shadow-xs';
+          walletTabBtn.className = 'py-2 px-3 rounded-full text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-1.5 text-hippo-navyMuted hover:text-hippo-navy';
+        } else {
+          walletTabBtn.className = 'py-2 px-3 rounded-full text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-1.5 bg-hippo-btn text-white shadow-xs';
+          bankTabBtn.className = 'py-2 px-3 rounded-full text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-1.5 text-hippo-navyMuted hover:text-hippo-navy';
+        }
+      }
+
+      const activeList = activePaymentTab === 'wallet' ? walletList : bankList;
+
+      if (activeList.length === 0) {
+        container.innerHTML = `
+          <div class="bg-hippo-bg border border-hippo-cardBorder rounded-2xl p-6 text-center space-y-2">
+            <div class="text-2xl">${activePaymentTab === 'wallet' ? '📱' : '🏦'}</div>
+            <div class="text-sm font-bold text-hippo-navy">ยังไม่มีรายการ${activePaymentTab === 'wallet' ? 'วอเลต' : 'บัญชีธนาคาร'}</div>
+            ${
+              isAdminMode
+                ? `<button type="button" onclick="openBankAdminModal(-1, '${activePaymentTab}')" class="mt-1 inline-flex items-center px-3.5 py-1.5 rounded-full bg-amber-100 text-amber-900 text-xs font-bold border border-amber-300">+ เพิ่ม${activePaymentTab === 'wallet' ? 'วอเลต' : 'บัญชีธนาคาร'}ใหม่</button>`
+                : ''
+            }
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = activeList.map((acc) => {
+        const idx = acc._originalIdx;
+        return `
+          <div class="relative bg-hippo-bg border border-hippo-cardBorder rounded-2xl p-4 space-y-2.5">
+            ${
+              isAdminMode
+                ? `<div class="flex justify-end">
+                     <button
+                       type="button"
+                       onclick="openBankAdminModal(${idx})"
+                       class="bg-amber-100 hover:bg-amber-200 text-amber-950 border border-amber-300 text-[11px] font-bold px-2.5 py-0.5 rounded-full shadow"
+                     >✏️ แก้ไขรายการนี้</button>
+                   </div>`
+                : ''
+            }
+            <div class="flex items-center justify-between gap-2">
+              <div class="flex items-center gap-2.5 min-w-0">
+                ${
+                  acc.imageUrl
+                    ? `<img src="${acc.imageUrl}" alt="${acc.bankName}" class="w-10 h-10 rounded-xl object-cover border border-hippo-cardBorder bg-white flex-shrink-0" onerror="this.onerror=null;this.style.display='none';"/>`
+                    : `<span class="w-3.5 h-3.5 rounded-full flex-shrink-0" style="background-color: ${acc.bankColor || '#387B5E'}"></span>`
+                }
+                <span class="font-bold text-hippo-navy text-[15px] leading-snug truncate">
+                  ${acc.bankName}
+                </span>
+              </div>
+              ${
+                acc.branch
+                  ? `<span class="text-[11px] text-hippo-navyMuted bg-white px-2.5 py-0.5 rounded-full border border-hippo-cardBorder flex-shrink-0">
+                       ${acc.branch}
+                     </span>`
+                  : ''
+              }
+            </div>
+
+            ${
+              acc.qrImageUrl
+                ? `<div class="rounded-xl overflow-hidden border border-hippo-cardBorder bg-white p-2 flex justify-center">
+                     <img src="${acc.qrImageUrl}" alt="QR หรือรูปประกอบบัญชี" class="max-h-44 w-auto object-contain rounded-lg" onerror="this.onerror=null;this.style.display='none';"/>
+                   </div>`
+                : ''
+            }
+
+            <div class="text-xs text-hippo-navyMuted">
+              ชื่อบัญชี: <strong class="text-hippo-navy font-semibold">${acc.accountName}</strong>
+            </div>
+
+            <div class="bg-white border border-hippo-cardBorder rounded-xl px-3.5 py-2.5 flex items-center justify-between gap-2">
+              <div>
+                <div class="text-[11px] text-hippo-navyMuted">${activePaymentTab === 'wallet' ? 'เบอร์วอเลต / เลขบัญชี' : 'เลขที่บัญชี'}</div>
+                <div class="font-mono font-bold text-[17px] tracking-wider text-hippo-navy select-all">
+                  ${acc.accountNumber}
+                </div>
+              </div>
+              <button
+                type="button"
+                id="copy-bank-btn-${idx}"
+                onclick="copyBankNumber('${acc.accountNumber}', ${idx})"
+                class="bg-hippo-btn hover:bg-hippo-btnHover active:scale-95 text-white text-xs font-semibold px-3.5 py-2 rounded-full transition flex items-center gap-1.5 shadow-xs flex-shrink-0"
+              >
+                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <rect x="9" y="9" width="13" height="13" rx="2"/>
+                  <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/>
+                </svg>
+                <span>คัดลอก</span>
+              </button>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    let currentTab = 'home';
+    const tabScrollPositions = { home: 0, groups: 0, fsale: 0, fonts: 0 };
+
+    function getTabDisplayName(tabId) {
+      const names = { home: 'หน้าหลัก', groups: 'เครือAnnter', fsale: 'เครือพาร์ทเนอร์', fonts: 'ฟอนต์' };
+      return names[tabId] || 'หน้าหลัก';
+    }
+
+    function switchTab(tabId) {
+      if (!['home', 'groups', 'fsale', 'fonts'].includes(tabId)) return;
+
+      tabScrollPositions[currentTab] = window.scrollY;
+      currentTab = tabId;
+
+      if (tabId === 'groups') {
+        closeGroupDetailPage();
+      } else if (tabId === 'fsale') {
+        closeGroupDetailPage(true);
+      }
+
+      ['home', 'groups', 'fsale', 'fonts'].forEach((id) => {
+        const panel = document.getElementById(`tab-${id}`);
+        const btn = document.getElementById(`nav-btn-${id}`);
+        if (id === tabId) {
+          panel.classList.remove('hidden');
+          panel.classList.remove('tab-animate');
+          void panel.offsetWidth;
+          panel.classList.add('tab-animate');
+
+          if (btn) btn.className = 'nav-tab-btn group flex flex-col items-center justify-center py-1.5 px-2 rounded-[22px] transition-all duration-200 bg-hippo-pill text-hippo-navy font-bold border border-hippo-pillBorder/80 shadow-2xs';
+        } else {
+          panel.classList.add('hidden');
+          if (btn) btn.className = 'nav-tab-btn group flex flex-col items-center justify-center py-1.5 px-2 rounded-[22px] transition-all duration-200 text-hippo-navyMuted hover:text-hippo-navy hover:bg-hippo-softBlue/60 font-medium border border-transparent';
+        }
+      });
+
+      window.scrollTo({ top: tabScrollPositions[tabId] || 0, behavior: 'instant' });
+    }
+
+    function openBankModal() {
+      renderBankAccounts();
+      const modal = document.getElementById('bank-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function copyBankNumber(accountNumber, btnIndex) {
+      const cleanNumber = accountNumber.replace(/[^0-9]/g, '');
+      const tempInput = document.createElement('textarea');
+      tempInput.value = cleanNumber;
+      tempInput.style.position = 'fixed';
+      tempInput.style.opacity = '0';
+      document.body.appendChild(tempInput);
+      tempInput.focus();
+      tempInput.select();
+
+      try {
+        document.execCommand('copy');
+      } catch (err) {}
+      document.body.removeChild(tempInput);
+
+      const btn = document.getElementById(`copy-bank-btn-${btnIndex}`);
+      if (btn) {
+        const originalHTML = btn.innerHTML;
+        btn.innerHTML = `
+          <svg class="w-3.5 h-3.5 text-[#A9F5B8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+          </svg>
+          <span>คัดลอกแล้ว ✓</span>
+        `;
+        btn.classList.replace('bg-hippo-btn', 'bg-[#2B7A4B]');
+        setTimeout(() => {
+          btn.innerHTML = originalHTML;
+          btn.classList.replace('bg-[#2B7A4B]', 'bg-hippo-btn');
+        }, 2000);
+      }
+
+      showToast(`คัดลอกเลขบัญชี ${accountNumber} เรียบร้อยแล้ว`);
+    }
+
+    let activePreviewSlidesCount = 1;
+
+    function openPreviewModal(category, index) {
+      let item = null;
+      let badgeLabel = '';
+
+      if (category === 'groups') {
+        item = SITE_DATA.groups[index];
+        badgeLabel = 'หมวดกลุ่มผลงาน';
+      } else if (category === 'fsale') {
+        item = SITE_DATA.fSaleItems[index];
+        badgeLabel = 'งานปล่อยเอฟ';
+      } else if (category === 'fonts') {
+        item = SITE_DATA.fonts[index];
+        badgeLabel = `ฟอนต์ (${item.lang})`;
+      }
+
+      if (!item) return;
+
+      document.getElementById('preview-modal-badge').textContent = badgeLabel;
+      document.getElementById('preview-modal-title').textContent = (item.title || item.name).replace(/\n/g, ' ');
+      document.getElementById('preview-meta').textContent = item.meta || '';
+      document.getElementById('preview-description').textContent = item.fullDesc || item.shortDesc || '';
+
+      const tagsContainer = document.getElementById('preview-tags');
+      tagsContainer.innerHTML = (item.tags || []).map(tag => `
+        <span class="text-xs font-medium bg-white border border-hippo-cardBorder text-hippo-navy px-2.5 py-1 rounded-full">
+          #${tag}
+        </span>
+      `).join('');
+
+      const samples = item.samples || [];
+      activePreviewSlidesCount = samples.length;
+      const track = document.getElementById('preview-slides-track');
+      const prevBtn = document.getElementById('preview-prev-btn');
+      const nextBtn = document.getElementById('preview-next-btn');
+
+      track.innerHTML = samples.map((s) => `
+        <div class="snap-center flex-shrink-0 w-full flex flex-col">
+          <div class="w-full ${category === 'fonts' && !item.specimenImageUrl ? '' : 'aspect-[4/3]'} overflow-hidden bg-hippo-softBlue flex items-center justify-center">
+            ${
+              category === 'fonts'
+                ? (item.specimenImageUrl
+                    ? `<img src="${item.specimenImageUrl}" alt="${item.name}" class="w-full h-full object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x450/D5F2E3/1D4636?text=Font+Sample';"/>`
+                    : getFontSpecimenHTML(item, s))
+                : (s.imageUrl || item.imageUrl
+                    ? `<img src="${s.imageUrl || item.imageUrl}" alt="${s.title || item.title}" class="w-full h-full object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x450/D5F2E3/1D4636?text=Preview';"/>`
+                    : getArtworkSVG(s.art || item.coverArt))
+            }
+          </div>
+          <div class="bg-white px-3.5 py-2 text-xs font-medium text-hippo-navyMuted border-t border-hippo-cardBorder flex items-center justify-between">
+            <span class="truncate">${s.title || ''}</span>
+          </div>
+        </div>
+      `).join('');
+
+      if (samples.length > 1) {
+        prevBtn.classList.remove('hidden');
+        prevBtn.classList.add('flex');
+        nextBtn.classList.remove('hidden');
+        nextBtn.classList.add('flex');
+      } else {
+        prevBtn.classList.add('hidden');
+        prevBtn.classList.remove('flex');
+        nextBtn.classList.add('hidden');
+        nextBtn.classList.remove('flex');
+      }
+
+      updatePreviewCounter(0, samples.length);
+
+      track.onscroll = () => {
+        const w = track.clientWidth || 1;
+        const idx = Math.round(track.scrollLeft / w);
+        updatePreviewCounter(idx, samples.length);
+      };
+
+      const modal = document.getElementById('preview-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+      track.scrollTo({ left: 0, behavior: 'instant' });
+    }
+
+    function updatePreviewCounter(currentIndex, total) {
+      const safeIndex = Math.max(0, Math.min(currentIndex, total - 1));
+      document.getElementById('preview-counter').textContent = `${safeIndex + 1} / ${total}`;
+    }
+
+    let audioCtx = null;
+    let isMusicPlaying = false;
+    let currentTrackIndex = 0;
+    let musicNoteStep = 0;
+    let musicIntervalId = null;
+    let customAudioEl = null;
+
+    function getMusicTracks() {
+      const tracks = SITE_DATA.brandHeader && SITE_DATA.brandHeader.musicTracks;
+      return (tracks && tracks.length) ? tracks : DEFAULT_SITE_DATA.brandHeader.musicTracks;
+    }
+
+    function renderMusicTrackList() {
+      const tracks = getMusicTracks();
+      const listEl = document.getElementById('music-track-list');
+      const titleEl = document.getElementById('music-current-title');
+      if (!listEl) return;
+
+      if (currentTrackIndex >= tracks.length) currentTrackIndex = 0;
+      const activeTrack = tracks[currentTrackIndex];
+      if (titleEl && activeTrack) {
+        titleEl.textContent = activeTrack.name;
+      }
+
+      listEl.innerHTML = tracks.map((t, idx) => {
+        const isSelected = idx === currentTrackIndex;
+        return `
+          <button
+            type="button"
+            onclick="selectMusicTrack(${idx})"
+            class="w-full text-left px-3 py-1.5 rounded-xl text-xs font-medium flex items-center justify-between gap-2 transition ${
+              isSelected
+                ? 'bg-hippo-pill text-hippo-navy font-bold border border-hippo-pillBorder'
+                : 'hover:bg-hippo-bg text-hippo-navyMuted'
+            }"
+          >
+            <span class="truncate">${t.name}</span>
+            <span class="text-[11px] flex-shrink-0">${isSelected ? (isMusicPlaying ? '🔊 เล่นอยู่' : '⏸ เลือกอยู่') : 'เลือก'}</span>
+          </button>
+        `;
+      }).join('');
+    }
+
+    function toggleMusicPopover(forceState) {
+      const pop = document.getElementById('music-popover');
+      if (!pop) return;
+      const shouldOpen = typeof forceState === 'boolean' ? forceState : pop.classList.contains('hidden');
+      if (shouldOpen) {
+        pop.classList.remove('hidden');
+        if (!isMusicPlaying) {
+          startMusicPlayback();
+        }
+      } else {
+        pop.classList.add('hidden');
+      }
+    }
+
+    const generatedTrackWavCache = {};
+
+    function generateMusicBoxWavDataUri(track) {
+      const cacheKey = `${track.id}_${(track.notes || []).join('-')}_${track.tempo || 112}`;
+      if (generatedTrackWavCache[cacheKey]) {
+        return generatedTrackWavCache[cacheKey];
+      }
+
+      const sampleRate = 22050;
+      const notes = (track && track.notes && track.notes.length)
+        ? track.notes
+        : [523.25, 659.25, 783.99, 1046.5, 783.99, 659.25, 587.33, 698.46];
+      const tempo = (track && track.tempo) || 112;
+      const noteDurationSec = Math.max(0.32, (60 / tempo) * 0.65);
+      const totalSamples = Math.floor(sampleRate * noteDurationSec * notes.length);
+      const samples = new Float32Array(totalSamples);
+
+      for (let idx = 0; idx < notes.length; idx++) {
+        const freq = notes[idx];
+        const startSample = Math.floor(idx * noteDurationSec * sampleRate);
+        const ringSamples = Math.min(totalSamples - startSample, Math.floor(sampleRate * noteDurationSec * 1.45));
+
+        for (let i = 0; i < ringSamples; i++) {
+          const t = i / sampleRate;
+          const attack = Math.min(1, t / 0.012);
+          const decay = Math.exp(-4.2 * t);
+          const env = attack * decay;
+
+          const fundamental = Math.sin(2 * Math.PI * freq * t);
+          const overtone1 = 0.35 * Math.sin(2 * Math.PI * freq * 2 * t) * Math.exp(-7 * t);
+          const overtone2 = 0.12 * Math.sin(2 * Math.PI * freq * 3 * t) * Math.exp(-11 * t);
+
+          samples[startSample + i] += (fundamental + overtone1 + overtone2) * env * 0.35;
+        }
+      }
+
+      const buffer = new ArrayBuffer(44 + totalSamples * 2);
+      const view = new DataView(buffer);
+      const writeStr = (offset, str) => {
+        for (let i = 0; i < str.length; i++) {
+          view.setUint8(offset + i, str.charCodeAt(i));
+        }
+      };
+
+      writeStr(0, 'RIFF');
+      view.setUint32(4, 36 + totalSamples * 2, true);
+      writeStr(8, 'WAVE');
+      writeStr(12, 'fmt ');
+      view.setUint32(16, 16, true);
+      view.setUint16(20, 1, true);
+      view.setUint16(22, 1, true);
+      view.setUint32(24, sampleRate, true);
+      view.setUint32(28, sampleRate * 2, true);
+      view.setUint16(32, 2, true);
+      view.setUint16(34, 16, true);
+      writeStr(36, 'data');
+      view.setUint32(40, totalSamples * 2, true);
+
+      let offset = 44;
+      for (let i = 0; i < totalSamples; i++) {
+        const s = Math.max(-1, Math.min(1, samples[i]));
+        view.setInt16(offset, s < 0 ? s * 0x8000 : s * 0x7FFF, true);
+        offset += 2;
+      }
+
+      const bytes = new Uint8Array(buffer);
+      let binary = '';
+      const chunkSize = 8192;
+      for (let i = 0; i < bytes.length; i += chunkSize) {
+        binary += String.fromCharCode.apply(null, bytes.subarray(i, i + chunkSize));
+      }
+
+      const dataUri = 'data:audio/wav;base64,' + btoa(binary);
+      generatedTrackWavCache[cacheKey] = dataUri;
+      return dataUri;
+    }
+
+    function ensureAudioPlayer() {
+      if (!customAudioEl) {
+        customAudioEl = new Audio();
+        customAudioEl.loop = true;
+        customAudioEl.preload = 'auto';
+        customAudioEl.playsInline = true;
+      }
+      return customAudioEl;
+    }
+
+    function startMusicPlayback() {
+      stopMusicScheduler();
+      const tracks = getMusicTracks();
+      const track = tracks[currentTrackIndex] || tracks[0];
+      const player = ensureAudioPlayer();
+
+      const customUrl = (track && track.audioUrl && track.audioUrl.trim() !== '') ? track.audioUrl.trim() : '';
+      const fallbackWavUri = generateMusicBoxWavDataUri(track);
+
+      try {
+        const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+        if (AudioContextClass) {
+          if (!audioCtx) audioCtx = new AudioContextClass();
+          if (audioCtx.state === 'suspended') audioCtx.resume();
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+          osc.type = 'triangle';
+          osc.frequency.setValueAtTime((track.notes && track.notes[0]) || 523.25, audioCtx.currentTime);
+          gain.gain.setValueAtTime(0.08, audioCtx.currentTime);
+          gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.45);
+          osc.connect(gain);
+          gain.connect(audioCtx.destination);
+          osc.start();
+          osc.stop(audioCtx.currentTime + 0.46);
+        }
+      } catch (e) {}
+
+      player.src = customUrl || fallbackWavUri;
+      player.volume = 0.9;
+      isMusicPlaying = true;
+      updateMusicDiscUI();
+
+      const playPromise = player.play();
+      if (playPromise !== undefined) {
+        playPromise.then(() => {
+          isMusicPlaying = true;
+          updateMusicDiscUI();
+        }).catch(() => {
+          if (customUrl) {
+            player.src = fallbackWavUri;
+            player.play().then(() => {
+              isMusicPlaying = true;
+              updateMusicDiscUI();
+            }).catch(() => {});
+          }
+        });
+      }
+    }
+
+    function stopMusicScheduler() {
+      if (musicIntervalId) {
+        clearInterval(musicIntervalId);
+        musicIntervalId = null;
+      }
+      if (customAudioEl) {
+        customAudioEl.pause();
+      }
+    }
+
+    function pauseMusicPlayback() {
+      isMusicPlaying = false;
+      stopMusicScheduler();
+      updateMusicDiscUI();
+    }
+
+    function toggleMusicPlayback() {
+      if (isMusicPlaying) {
+        pauseMusicPlayback();
+      } else {
+        startMusicPlayback();
+      }
+    }
+
+    function selectMusicTrack(index) {
+      currentTrackIndex = index;
+      startMusicPlayback();
+      renderMusicTrackList();
+      const tracks = getMusicTracks();
+      if (tracks[index]) {
+        showToast(`กำลังเล่นเพลง: ${tracks[index].name}`);
+      }
+    }
+
+    function updateMusicDiscUI() {
+      const disc = document.getElementById('music-disc-graphic');
+      const notesLayer = document.getElementById('music-notes-layer');
+      const playBtnText = document.getElementById('music-play-btn-text');
+      const statusDot = document.getElementById('music-status-dot');
+
+      if (isMusicPlaying) {
+        disc.classList.remove('disc-paused');
+        notesLayer.classList.remove('hidden');
+        if (playBtnText) playBtnText.textContent = '⏸ หยุด';
+        if (statusDot) statusDot.className = 'absolute -bottom-0.5 -right-0.5 w-5 h-5 rounded-full bg-[#8CE99A] text-hippo-navy border border-white flex items-center justify-center text-[10px] font-bold shadow-2xs';
+      } else {
+        disc.classList.add('disc-paused');
+        notesLayer.classList.add('hidden');
+        if (playBtnText) playBtnText.textContent = '▶ เล่น';
+        if (statusDot) statusDot.className = 'absolute -bottom-0.5 -right-0.5 w-5 h-5 rounded-full bg-hippo-pill text-hippo-navy border border-white flex items-center justify-center text-[10px] font-bold shadow-2xs';
+      }
+      renderMusicTrackList();
+    }
+
+    let hasTriggeredInitialAutoplay = false;
+    function setupFirstInteractionAutoplay() {
+      const unlockAndPlay = () => {
+        if (hasTriggeredInitialAutoplay) return;
+        hasTriggeredInitialAutoplay = true;
+        currentTrackIndex = 0;
+        startMusicPlayback();
+        ['click', 'touchstart', 'touchend', 'pointerdown', 'keydown'].forEach((evt) => {
+          document.removeEventListener(evt, unlockAndPlay, true);
+        });
+      };
+
+      ['click', 'touchstart', 'touchend', 'pointerdown', 'keydown'].forEach((evt) => {
+        document.addEventListener(evt, unlockAndPlay, { capture: true, passive: true });
+      });
+    }
+
+    /**
+     * ============================================================================
+     * 6. ระบบโหมดแอดมิน (INLINE ADMIN MODE)
+     * ============================================================================
+     */
+    let currentAdminEditConfig = null;
+
+    function toggleAdminMode(forceState) {
+      isAdminMode = typeof forceState === 'boolean' ? forceState : !isAdminMode;
+      const statusBar = document.getElementById('admin-statusbar');
+      const badge = document.getElementById('admin-badge-indicator');
+
+      if (isAdminMode) {
+        statusBar.classList.remove('hidden');
+        statusBar.classList.add('flex');
+        badge.classList.replace('bg-hippo-btn', 'bg-amber-500');
+        showToast('เปิดโหมดแอดมินแล้ว: แก้ไข เพิ่ม หรือลบข้อมูลในแต่ละหน้าได้เลย');
+      } else {
+        statusBar.classList.add('hidden');
+        statusBar.classList.remove('flex');
+        badge.classList.replace('bg-amber-500', 'bg-hippo-btn');
+        showToast('ปิดโหมดแอดมินแล้ว');
+      }
+
+      document.querySelectorAll('.admin-only-btn').forEach((el) => {
+        if (isAdminMode) {
+          el.classList.remove('hidden');
+        } else {
+          el.classList.add('hidden');
+        }
+      });
+
+      renderAllSections();
+      const detailView = document.getElementById('groups-detail-view');
+      if (detailView && !detailView.classList.contains('hidden')) {
+        openGroupSubItemsModal(activeGroupModalIndex);
+      }
+    }
+
+    function handleAdminImageFileSelect(inputEl, targetFieldName) {
+      const file = inputEl.files && inputEl.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function (ev) {
+        const img = new Image();
+        img.onload = function () {
+          const canvas = document.createElement('canvas');
+          const maxDim = 900;
+          let w = img.width;
+          let h = img.height;
+          if (w > maxDim || h > maxDim) {
+            if (w > h) {
+              h = Math.round((h * maxDim) / w);
+              w = maxDim;
+            } else {
+              w = Math.round((w * maxDim) / h);
+              h = maxDim;
+            }
+          }
+          canvas.width = w;
+          canvas.height = h;
+          const ctx = canvas.getContext('2d');
+          ctx.drawImage(img, 0, 0, w, h);
+          const dataUrl = canvas.toDataURL('image/jpeg', 0.84);
+          const textInput = document.querySelector(`#admin-editor-form [name="${targetFieldName}"]`);
+          if (textInput) {
+            textInput.value = dataUrl;
+            showToast('อัปโหลดรูปภาพเรียบร้อย กดบันทึกข้อมูลได้เลย');
+          }
+        };
+        img.src = ev.target.result;
+      };
+      reader.readAsDataURL(file);
+    }
+
+    function openAdminModal(config) {
+      currentAdminEditConfig = config;
+      document.getElementById('admin-editor-title').textContent = config.title;
+      const fieldsContainer = document.getElementById('admin-editor-fields');
+      const deleteBtn = document.getElementById('admin-delete-btn');
+
+      if (config.canDelete) {
+        deleteBtn.classList.remove('hidden');
+      } else {
+        deleteBtn.classList.add('hidden');
+      }
+
+      fieldsContainer.innerHTML = config.fields.map((f) => {
+        const val = (f.value !== undefined && f.value !== null) ? String(f.value).replace(/"/g, '&quot;') : '';
+        const isImageField = /image|logo|disc|qr/i.test(f.name);
+        if (f.type === 'textarea') {
+          return `
+            <div>
+              <label class="block text-xs font-bold text-hippo-navy mb-1">${f.label}</label>
+              <textarea
+                name="${f.name}"
+                rows="3"
+                placeholder="${f.placeholder || ''}"
+                class="w-full rounded-xl border border-hippo-cardBorder bg-hippo-bg px-3 py-2 text-xs text-hippo-navy focus:outline-none focus:border-hippo-btn"
+              >${f.value || ''}</textarea>
+            </div>
+          `;
+        }
+        return `
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-1">
+              <label class="block text-xs font-bold text-hippo-navy">${f.label}</label>
+              ${
+                isImageField
+                  ? `<label class="cursor-pointer inline-flex items-center gap-1 text-[11px] font-bold bg-hippo-pill hover:bg-hippo-pillBorder text-hippo-navy px-2.5 py-0.5 rounded-full border border-hippo-pillBorder transition">
+                       <span>📁 เลือกรูปจากเครื่อง</span>
+                       <input type="file" accept="image/*" class="hidden" onchange="handleAdminImageFileSelect(this, '${f.name}')" />
+                     </label>`
+                  : ''
+              }
+            </div>
+            <input
+              type="text"
+              name="${f.name}"
+              value="${val}"
+              placeholder="${f.placeholder || (isImageField ? 'วางลิงก์รูปภาพ หรือกดปุ่มเลือกรูปจากเครื่องด้านบน' : '')}"
+              class="w-full rounded-xl border border-hippo-cardBorder bg-hippo-bg px-3 py-2 text-xs text-hippo-navy focus:outline-none focus:border-hippo-btn"
+            />
+          </div>
+        `;
+      }).join('');
+
+      const modal = document.getElementById('admin-editor-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function handleAdminFormSubmit(event) {
+      event.preventDefault();
+      if (!currentAdminEditConfig || !currentAdminEditConfig.onSave) return;
+      const formData = new FormData(event.target);
+      const values = {};
+      formData.forEach((v, k) => { values[k] = typeof v === 'string' ? v.trim() : v; });
+      if (currentAdminEditConfig.onSave(values) === false) return;
+      saveSiteData();
+      renderAllSections();
+      closeModal('admin-editor-modal');
+      showToast('บันทึกการแก้ไขเรียบร้อยแล้ว ✓');
+    }
+
+    function handleAdminDelete() {
+      if (!currentAdminEditConfig || !currentAdminEditConfig.onDelete) return;
+      currentAdminEditConfig.onDelete();
+      saveSiteData();
+      renderAllSections();
+      closeModal('admin-editor-modal');
+      showToast('ลบรายการเรียบร้อยแล้ว');
+    }
+
+    function getWelcomePages() {
+      const pages = Array.isArray(SITE_DATA.welcomePages) ? SITE_DATA.welcomePages : DEFAULT_SITE_DATA.welcomePages;
+      return pages.map(page => ({
+        title: typeof page?.title === 'string' ? page.title.trim() : '',
+        text: typeof page?.text === 'string' ? page.text.trim() : '',
+        images: Array.isArray(page?.images)
+          ? page.images.filter(url => typeof url === 'string' && /^https?:\/\/[^\s]+$/i.test(url))
+          : []
+      })).filter(page => page.title || page.text || page.images.length);
+    }
+
+    function openWelcomeAdminModal(draft = getWelcomePages()) {
+      const pages = draft.length ? draft : [{ title: '', text: '', images: [] }];
+      const readPages = (form) => pages.map((_, index) => ({
+        title: String(form.get('welcomeTitle' + index) || '').trim(),
+        text: String(form.get('welcomeText' + index) || '').trim(),
+        images: String(form.get('welcomeLinks' + index) || '').split(/\r?\n/)
+          .map(link => link.trim()).filter(Boolean)
+      }));
+      const escapeTextarea = text => text.replace(/&/g, '&amp;').replace(/</g, '&lt;');
+
+      openAdminModal({
+        title: 'ป๊อปอัปต้อนรับ',
+        canDelete: false,
+        fields: pages.flatMap((page, index) => [
+          { name: 'welcomeTitle' + index, type: 'textarea', label: 'หน้า ' + (index + 1) + ' · หัวข้อ',
+            value: escapeTextarea(page.title) },
+          { name: 'welcomeText' + index, type: 'textarea', label: 'ข้อความ',
+            value: escapeTextarea(page.text) },
+          { name: 'welcomeLinks' + index, type: 'textarea', label: 'ลิงก์รูปภาพ · 1 ลิงก์ต่อบรรทัด',
+            value: escapeTextarea(page.images.join('\n')) }
+        ]),
+        onSave: () => {
+          const form = document.getElementById('admin-editor-form');
+          const draftPages = readPages(new FormData(form));
+          const invalidPage = draftPages.findIndex(page => page.images.some(url => !/^https?:\/\/[^\s]+$/i.test(url)));
+          if (invalidPage !== -1) {
+            showToast('ตรวจลิงก์รูปภาพในหน้า ' + (invalidPage + 1) + ' ให้ขึ้นต้นด้วย https:// หรือ http://');
+            form.elements['welcomeLinks' + invalidPage].focus();
+            return false;
+          }
+          SITE_DATA.welcomePages = draftPages.filter(page => page.title || page.text || page.images.length);
+        }
+      });
+
+      const form = document.getElementById('admin-editor-form');
+      const fields = document.getElementById('admin-editor-fields');
+      const hint = document.createElement('p');
+      hint.className = 'text-xs text-hippo-navyMuted';
+      hint.textContent = 'หัวข้อ ข้อความ และรูป เลือกเว้นว่างได้ ถ้าต้องการลบหน้า ให้ล้างทุกช่องของหน้านั้นแล้วบันทึก';
+      fields.prepend(hint);
+
+      const add = document.createElement('button');
+      add.type = 'button';
+      add.className = 'px-4 py-2 rounded-full border border-hippo-pillBorder text-hippo-navy text-xs font-semibold';
+      add.textContent = '+ เพิ่มหน้าป๊อปอัป';
+      add.addEventListener('click', () => {
+        openWelcomeAdminModal([...readPages(new FormData(form)), { title: '', text: '', images: [] }]);
+        form.elements['welcomeTitle' + pages.length].focus();
+      });
+      fields.append(add);
+    }
+
+    function openHeaderAdminModal() {
+      const h = SITE_DATA.brandHeader;
+      const tracksText = (h.musicTracks || []).map(t => `${t.name}|${t.audioUrl || ''}`).join('\n');
+      openAdminModal({
+        title: 'แก้ไขส่วนหัวเว็บ & แผ่นเสียงเพลง',
+        canDelete: false,
+        fields: [
+          { name: 'name', label: 'ชื่อร้าน', value: h.name },
+          { name: 'badge', label: 'ป้ายกำกับ (เช่น Official)', value: h.badge },
+          { name: 'subtitle', label: 'คำโปรยใต้ชื่อร้าน', value: h.subtitle },
+          { name: 'logoUrl', label: 'รูปโลโก้ร้าน (URL หรือเลือกรูป)', value: h.logoUrl },
+          { name: 'discImageUrl', label: 'รูปแผ่นเสียงหมุน (URL หรือเลือกรูป)', value: h.discImageUrl },
+          {
+            name: 'tracksText',
+            type: 'textarea',
+            label: 'รายชื่อเพลง (บรรทัดละ 1 เพลง รูปแบบ: ชื่อเพลง หรือ ชื่อเพลง|ลิงก์ไฟล์เสียงMP3)',
+            value: tracksText
+          }
+        ],
+        onSave: (vals) => {
+          h.name = vals.name || 'Annter Shop';
+          h.badge = vals.badge || 'Official';
+          h.subtitle = vals.subtitle || '';
+          h.logoUrl = vals.logoUrl || h.logoUrl;
+          h.discImageUrl = vals.discImageUrl || h.discImageUrl;
+          const defaultTracks = DEFAULT_SITE_DATA.brandHeader.musicTracks;
+          const lines = (vals.tracksText || '').split('\n').map(l => l.trim()).filter(Boolean);
+          if (lines.length > 0) {
+            h.musicTracks = lines.map((line, i) => {
+              const parts = line.split('|');
+              const base = defaultTracks[i % defaultTracks.length];
+              return {
+                id: `track-${i + 1}`,
+                name: parts[0].trim() || `เพลงที่ ${i + 1}`,
+                audioUrl: (parts[1] || '').trim(),
+                tempo: base.tempo,
+                notes: base.notes
+              };
+            });
+          }
+        }
+      });
+    }
+
+    function openBannerAdminModal(index) {
+      const isNew = index < 0;
+      const item = isNew
+        ? { title: 'แบนเนอร์ใหม่', imageUrl: 'https://i.postimg.cc/j2fJ9mYt/IMG-9089.jpg', linkUrl: '', actionTab: 'groups' }
+        : SITE_DATA.banners[index];
+
+      openAdminModal({
+        title: isNew ? 'เพิ่มแบนเนอร์ใหม่' : 'แก้ไขแบนเนอร์',
+        canDelete: !isNew && SITE_DATA.banners.length > 1,
+        fields: [
+          { name: 'title', label: 'ชื่อแบนเนอร์', value: item.title },
+          { name: 'imageUrl', label: 'ลิงก์รูปภาพแบนเนอร์ (URL)', value: item.imageUrl },
+          { name: 'actionTab', label: 'แท็บที่ต้องการเปิดเมื่อแตะ (home, groups, fsale, fonts หรือเว้นว่าง)', value: item.actionTab || '' },
+          { name: 'linkUrl', label: 'หรือลิงก์เว็บไซต์ภายนอก (URL)', value: item.linkUrl || '' }
+        ],
+        onSave: (vals) => {
+          const updated = {
+            id: item.id || `banner-${Date.now()}`,
+            title: vals.title || 'แบนเนอร์ประชาสัมพันธ์',
+            imageUrl: vals.imageUrl,
+            actionTab: vals.actionTab,
+            linkUrl: vals.linkUrl,
+            svgType: item.svgType || 'hippo-sleeping-cloud'
+          };
+          if (isNew) SITE_DATA.banners.push(updated);
+          else SITE_DATA.banners[index] = updated;
+        },
+        onDelete: () => {
+          SITE_DATA.banners.splice(index, 1);
+        }
+      });
+    }
+
+    function openContactAdminModal(index) {
+      const isNew = index < 0;
+      const item = isNew
+        ? { id: 'line', name: 'LINE', url: 'https://line.me', isSample: false }
+        : SITE_DATA.contacts[index];
+
+      openAdminModal({
+        title: isNew ? 'เพิ่มช่องทางการติดต่อ' : 'แก้ไขช่องทางการติดต่อ',
+        canDelete: !isNew,
+        fields: [
+          { name: 'name', label: 'ชื่อปุ่ม (เช่น LINE, Instagram, Facebook)', value: item.name },
+          { name: 'url', label: 'ลิงก์ปลายทาง (URL)', value: item.url },
+          { name: 'handle', label: 'คำอธิบาย/ชื่อไอดี', value: item.handle || '' }
+        ],
+        onSave: (vals) => {
+          const updated = {
+            id: (vals.name || 'line').toLowerCase(),
+            name: vals.name || 'ติดต่อเรา',
+            url: vals.url,
+            handle: vals.handle,
+            isSample: false
+          };
+          if (isNew) SITE_DATA.contacts.push(updated);
+          else SITE_DATA.contacts[index] = updated;
+        },
+        onDelete: () => {
+          SITE_DATA.contacts.splice(index, 1);
+        }
+      });
+    }
+
+    function openBankAdminModal(index, defaultCat) {
+      const isNew = index < 0;
+      const item = isNew
+        ? {
+            category: defaultCat || activePaymentTab || 'bank',
+            bankName: (defaultCat || activePaymentTab) === 'wallet' ? 'TrueMoney Wallet' : 'ธนาคารกสิกรไทย (KBank)',
+            bankColor: (defaultCat || activePaymentTab) === 'wallet' ? '#FF6600' : '#138F2D',
+            accountName: '',
+            accountNumber: '',
+            branch: '',
+            imageUrl: '',
+            qrImageUrl: ''
+          }
+        : SITE_DATA.bankAccounts[index];
+
+      openAdminModal({
+        title: isNew ? 'เพิ่มช่องทางการโอนเงิน (ธนาคาร / วอเลต)' : 'แก้ไขข้อมูลช่องทางการโอนเงิน',
+        canDelete: !isNew && SITE_DATA.bankAccounts.length > 1,
+        fields: [
+          { name: 'category', label: 'ประเภทหมวดหมู่ (พิมพ์ bank สำหรับธนาคาร หรือ wallet สำหรับวอเลต)', value: item.category || 'bank' },
+          { name: 'bankName', label: 'ชื่อธนาคาร หรือ ชื่อวอเลต', value: item.bankName },
+          { name: 'accountName', label: 'ชื่อบัญชี', value: item.accountName },
+          { name: 'accountNumber', label: 'เลขที่บัญชี / เบอร์วอเลต', value: item.accountNumber },
+          { name: 'branch', label: 'สาขา / หมายเหตุย่อย', value: item.branch || '' },
+          { name: 'imageUrl', label: 'ลิงก์รูปไอคอนธนาคาร/วอเลต (URL - เว้นว่างได้)', value: item.imageUrl || '' },
+          { name: 'qrImageUrl', label: 'ลิงก์รูปภาพ QR Code หรือรูปบัญชี (URL - เว้นว่างได้)', value: item.qrImageUrl || '' },
+          { name: 'bankColor', label: 'โค้ดสีประจำธนาคาร/วอเลต (เช่น #138F2D หรือ #FF6600)', value: item.bankColor || '#387B5E' }
+        ],
+        onSave: (vals) => {
+          const cleanCategory = (vals.category || '').toLowerCase() === 'wallet' ? 'wallet' : 'bank';
+          const updated = {
+            id: item.id || `bank-${Date.now()}`,
+            category: cleanCategory,
+            bankName: vals.bankName || 'ธนาคาร / วอเลต',
+            accountName: vals.accountName || '-',
+            accountNumber: vals.accountNumber || '000-0-00000-0',
+            branch: vals.branch || '',
+            imageUrl: vals.imageUrl || '',
+            qrImageUrl: vals.qrImageUrl || '',
+            bankColor: vals.bankColor || '#387B5E'
+          };
+          if (isNew) SITE_DATA.bankAccounts.push(updated);
+          else SITE_DATA.bankAccounts[index] = updated;
+          activePaymentTab = cleanCategory;
+          renderBankAccounts();
+        },
+        onDelete: () => {
+          SITE_DATA.bankAccounts.splice(index, 1);
+          renderBankAccounts();
+        }
+      });
+    }
+
+    function openOtherLinkAdminModal(index) {
+      const isNew = index < 0;
+      const item = isNew
+        ? { title: 'ปุ่มลิงก์ใหม่', subtitle: 'คำอธิบายสั้น', imageUrl: '', url: 'https://', actionTab: '' }
+        : SITE_DATA.otherLinks[index];
+
+      openAdminModal({
+        title: isNew ? 'เพิ่มปุ่มรูป 1:1 หน้าหลัก' : 'แก้ไขปุ่มรูป 1:1 หน้าหลัก',
+        canDelete: !isNew,
+        fields: [
+          { name: 'title', label: 'ชื่อปุ่ม / หัวข้อ', value: item.title },
+          { name: 'subtitle', label: 'คำอธิบายย่อย', value: item.subtitle || '' },
+          { name: 'imageUrl', label: 'รูปภาพขนาด 1:1 (URL หรือเลือกรูปจากเครื่อง)', value: item.imageUrl || '' },
+          { name: 'url', label: 'ลิงก์เมื่อกดปุ่มนี้ (ใส่ https://... หรือ #groups, #fsale, #fonts)', value: item.url || '' },
+          { name: 'actionTab', label: 'หรือระบุชื่อแท็บในเว็บโดยตรง (home, groups, fsale, fonts)', value: item.actionTab || '' }
+        ],
+        onSave: (vals) => {
+          const updated = {
+            id: item.id || `link-${Date.now()}`,
+            title: vals.title || 'ลิงก์เพิ่มเติม',
+            subtitle: vals.subtitle || '',
+            imageUrl: vals.imageUrl || '',
+            coverArt: item.coverArt || 'fsale-meadow',
+            actionTab: vals.actionTab || '',
+            url: vals.url || '',
+            isSample: false
+          };
+          if (isNew) SITE_DATA.otherLinks.push(updated);
+          else SITE_DATA.otherLinks[index] = updated;
+        },
+        onDelete: () => {
+          SITE_DATA.otherLinks.splice(index, 1);
+        }
+      });
+    }
+
+    function openGroupAdminModal(index, isPartner = false) {
+      const groups = isPartner ? SITE_DATA.partners : SITE_DATA.groups;
+      const label = isPartner ? 'เครือพาร์ทเนอร์' : 'กลุ่มผลงาน';
+      const isNew = index < 0;
+      const item = isNew
+        ? { title: label + 'ใหม่', shortDesc: 'รายละเอียดสั้นของกลุ่ม', imageUrl: '', coverArt: 'group-hippo-desk', ...(isPartner ? { categories: [] } : { subItems: [] }) }
+        : groups[index];
+
+      openAdminModal({
+        title: isNew ? 'เพิ่ม' + label + 'ใหม่' : 'แก้ไข' + label,
+        canDelete: !isNew,
+        fields: [
+          { name: 'title', label: 'ชื่อ' + label, value: item.title.replace(/\n/g, ' ') },
+          { name: 'shortDesc', label: 'คำอธิบายสั้นในการ์ด', value: item.shortDesc.replace(/\n/g, ' ') },
+          { name: 'imageUrl', label: 'ลิงก์รูปปกกลุ่ม (URL - เว้นว่างเพื่อใช้ภาพวาดของร้าน)', value: item.imageUrl || '' }
+        ],
+        onSave: (vals) => {
+          const updated = Object.assign({}, item, {
+            id: item.id || `group-${Date.now()}`,
+            title: vals.title || label,
+            shortDesc: vals.shortDesc || '',
+            imageUrl: vals.imageUrl || '',
+            ...(isPartner ? { categories: item.categories || [] } : { subItems: item.subItems || [] })
+          });
+          if (isNew) groups.push(updated);
+          else groups[index] = updated;
+        },
+        onDelete: () => {
+          groups.splice(index, 1);
+        }
+      });
+    }
+
+    function openPartnerCategoryAdminModal(index) {
+      const partner = SITE_DATA.partners[activePartnerIndex];
+      if (!partner) return;
+
+      const categories = partner.categories || (partner.categories = []);
+      const isNew = index < 0;
+      const category = isNew ? {} : categories[index];
+      if (!category) return;
+
+      openAdminModal({
+        title: isNew ? 'เพิ่มหมวดหมู่' : 'แก้ไขหมวดหมู่',
+        canDelete: !isNew,
+        fields: [
+          { name: 'name', label: 'ชื่อหมวดหมู่', value: category.name },
+          { name: 'detail', label: 'รายละเอียด (เว้นว่างได้)', value: (category.detail || '').replace(/&/g, '&amp;').replace(/</g, '&lt;'), type: 'textarea' }
+        ],
+        onSave: ({ name, detail }) => {
+          if (!name) {
+            showToast('กรุณากรอกชื่อหมวดหมู่');
+            return false;
+          }
+          const updated = { ...category, name, detail };
+          if (isNew) categories.push(updated);
+          else categories[index] = updated;
+        },
+        onDelete: () => categories.splice(index, 1)
+      });
+    }
+
+    function openSubItemAdminModal(groupIndex, subIndex, categoryIndex) {
+      const isPartner = categoryIndex !== undefined;
+      const group = isPartner ? SITE_DATA.partners[groupIndex]?.categories?.[categoryIndex] : SITE_DATA.groups[groupIndex];
+      if (!group) return;
+      const refresh = () => {
+        if (isPartner) openPartnerCategories(groupIndex, false);
+        else openGroupSubItemsModal(groupIndex);
+      };
+      const isNew = subIndex < 0;
+      const sub = isNew
+        ? { name: 'รายการย่อยใหม่', price: '59 ฿', detail: 'รายละเอียดผลงานในกลุ่ม', imageUrl: '', driveUrl: 'https://drive.google.com' }
+        : group.subItems?.[subIndex];
+      if (!sub) return;
+
+      openAdminModal({
+        title: isNew ? 'เพิ่มรายการย่อยในกลุ่ม' : 'แก้ไขรายการย่อยในกลุ่ม',
+        canDelete: !isNew,
+        fields: [
+          { name: 'name', label: 'ชื่อรายการย่อย', value: sub.name },
+          { name: 'price', label: 'ราคา (เช่น 59 ฿)', value: sub.price },
+          { name: 'detail', type: 'textarea', label: 'รายละเอียด', value: escapeCatalogText(sub.detail) },
+          { name: 'imageUrl', label: 'ลิงก์รูปภาพด้านซ้าย (URL - เว้นว่างเพื่อใช้รูปเริ่มต้น)', value: sub.imageUrl || '' },
+          { name: 'driveUrl', label: 'ลิงก์ Google Drive สำหรับปุ่มดูตัวอย่าง', value: sub.driveUrl || '' }
+        ],
+        onSave: (vals) => {
+          const updated = {
+            id: sub.id || `sub-${Date.now()}`,
+            name: vals.name || 'รายการย่อย',
+            price: vals.price || '-',
+            detail: vals.detail || '',
+            imageUrl: vals.imageUrl || '',
+            art: sub.art || group.coverArt || 'group-hippo-desk',
+            driveUrl: vals.driveUrl || 'https://drive.google.com'
+          };
+          if (!group.subItems) group.subItems = [];
+          if (isNew) group.subItems.push(updated);
+          else group.subItems[subIndex] = updated;
+          refresh();
+        },
+        onDelete: () => {
+          group.subItems.splice(subIndex, 1);
+          refresh();
+        }
+      });
+    }
+
+    function openFSaleAdminModal(index) {
+      const isNew = index < 0;
+      const item = isNew
+        ? { title: 'ชื่องานปล่อยเอฟใหม่', shortDesc: 'คำอธิบายสั้น', fullDesc: 'รายละเอียดเต็ม', meta: 'สัดส่วน 1:1 • 300 DPI', imageUrl: '', tags: ['งานปล่อยเอฟ'], coverArt: 'fsale-meadow' }
+        : SITE_DATA.fSaleItems[index];
+
+      openAdminModal({
+        title: isNew ? 'เพิ่มงานปล่อยเอฟใหม่' : 'แก้ไขงานปล่อยเอฟ',
+        canDelete: !isNew,
+        fields: [
+          { name: 'title', label: 'ชื่องาน', value: item.title },
+          { name: 'shortDesc', label: 'คำอธิบายสั้นใต้รูป', value: item.shortDesc },
+          { name: 'fullDesc', type: 'textarea', label: 'รายละเอียดเต็ม (แสดงเมื่อกดดูเพิ่มเติม)', value: item.fullDesc || '' },
+          { name: 'imageUrl', label: 'ลิงก์รูปภาพผลงาน (URL - เว้นว่างเพื่อใช้ภาพวาดเริ่มต้น)', value: item.imageUrl || '' },
+          { name: 'meta', label: 'ข้อมูลไฟล์ (เช่น สัดส่วน 1:1 • 300 DPI)', value: item.meta || '' },
+          { name: 'tags', label: 'แท็ก (คั่นด้วยเครื่องหมายจุลภาค ,)', value: (item.tags || []).join(', ') }
+        ],
+        onSave: (vals) => {
+          const updated = Object.assign({}, item, {
+            id: item.id || `fsale-${Date.now()}`,
+            title: vals.title || 'งานปล่อยเอฟ',
+            shortDesc: vals.shortDesc || '',
+            fullDesc: vals.fullDesc || '',
+            imageUrl: vals.imageUrl || '',
+            meta: vals.meta || '',
+            tags: vals.tags ? vals.tags.split(',').map(t => t.trim()).filter(Boolean) : [],
+            coverArt: item.coverArt || 'fsale-meadow',
+            samples: [
+              { title: vals.title || 'ภาพตัวอย่าง', art: item.coverArt || 'fsale-meadow', imageUrl: vals.imageUrl || '' }
+            ]
+          });
+          if (isNew) SITE_DATA.fSaleItems.push(updated);
+          else SITE_DATA.fSaleItems[index] = updated;
+        },
+        onDelete: () => {
+          SITE_DATA.fSaleItems.splice(index, 1);
+        }
+      });
+    }
+
+    function openFontAdminModal(index) {
+      const isNew = index < 0;
+      const item = isNew
+        ? {
+            name: 'ชื่อฟอนต์ใหม่',
+            category: activeFontCategory !== 'ทั้งหมด' ? activeFontCategory : 'ฟอนต์ลายมือน่ารัก',
+            lang: 'ไทย / อังกฤษ',
+            shortDesc: 'คำอธิบายสั้น',
+            fullDesc: 'รายละเอียดฟอนต์ฉบับเต็ม',
+            imageUrl: '',
+            specimenImageUrl: '',
+            meta: 'รองรับ ไทย / อังกฤษ (.TTF, .OTF)',
+            tags: ['ฟอนต์ลายมือ'],
+            fontClass: 'font-strawberry font-semibold'
+          }
+        : SITE_DATA.fonts[index];
+
+      openAdminModal({
+        title: isNew ? 'เพิ่มฟอนต์ใหม่' : 'แก้ไขข้อมูลฟอนต์',
+        canDelete: !isNew,
+        fields: [
+          { name: 'name', label: 'ชื่อฟอนต์', value: item.name },
+          { name: 'category', label: 'หมวดหมู่ฟอนต์ (เช่น ฟอนต์ลายมือน่ารัก, ฟอนต์สไตล์คาเฟ่, ฟอนต์พาดหัวป้าย)', value: item.category || 'ฟอนต์ลายมือน่ารัก' },
+          { name: 'lang', label: 'ภาษาที่รองรับ (เช่น ไทย / อังกฤษ)', value: item.lang },
+          { name: 'shortDesc', label: 'คำอธิบายสั้นในการ์ด', value: item.shortDesc },
+          { name: 'imageUrl', label: 'รูปภาพปกฟอนต์ (URL หรือเลือกรูปจากเครื่อง)', value: item.imageUrl || '' },
+          { name: 'specimenImageUrl', label: 'รูปแผ่นตัวอย่างฟอนต์เมื่อกดดูเพิ่มเติม (URL หรือเลือกรูป)', value: item.specimenImageUrl || '' },
+          { name: 'fullDesc', type: 'textarea', label: 'รายละเอียดเต็ม', value: item.fullDesc || '' },
+          { name: 'tags', label: 'แท็ก (คั่นด้วยจุลภาค ,)', value: (item.tags || []).join(', ') }
+        ],
+        onSave: (vals) => {
+          const updated = Object.assign({}, item, {
+            id: item.id || `font-${Date.now()}`,
+            name: vals.name || 'ฟอนต์ใหม่',
+            category: vals.category || 'ฟอนต์ลายมือน่ารัก',
+            lang: vals.lang || 'ไทย / อังกฤษ',
+            shortDesc: vals.shortDesc || '',
+            fullDesc: vals.fullDesc || '',
+            imageUrl: vals.imageUrl || '',
+            specimenImageUrl: vals.specimenImageUrl || '',
+            tags: vals.tags ? vals.tags.split(',').map(t => t.trim()).filter(Boolean) : [],
+            samples: item.samples || [
+              { title: `แผ่นตัวอย่างชุดตัวอักษร ${vals.name}`, fontType: 'strawberry', sheetMode: 'main' }
+            ]
+          });
+          if (isNew) SITE_DATA.fonts.push(updated);
+          else SITE_DATA.fonts[index] = updated;
+        },
+        onDelete: () => {
+          SITE_DATA.fonts.splice(index, 1);
+        }
+      });
+    }
+
+    function openFontCategoryAdminModal() {
+      const existingCats = [];
+      (SITE_DATA.fontCategories || []).forEach(c => { if (c && !existingCats.includes(c)) existingCats.push(c); });
+      (SITE_DATA.fonts || []).forEach(f => {
+        const c = (f.category || '').trim();
+        if (c && !existingCats.includes(c)) existingCats.push(c);
+      });
+
+      openAdminModal({
+        title: 'จัดการหมวดหมู่ฟอนต์ (เพิ่ม / ลบหมวดหมู่)',
+        canDelete: false,
+        fields: [
+          {
+            name: 'categoriesText',
+            type: 'textarea',
+            label: 'รายชื่อหมวดหมู่ฟอนต์ (พิมพ์บรรทัดละ 1 หมวดหมู่)',
+            value: existingCats.join('\n')
+          }
+        ],
+        onSave: (vals) => {
+          const list = (vals.categoriesText || '')
+            .split('\n')
+            .map(s => s.trim())
+            .filter(Boolean);
+          SITE_DATA.fontCategories = list;
+        }
+      });
+    }
+
+    function scrollToPreviewSlide(index) {
+      const track = document.getElementById('preview-slides-track');
+      const w = track.clientWidth;
+      track.scrollTo({ left: w * index, behavior: 'smooth' });
+    }
+
+    function stepPreviewSlide(delta) {
+      const track = document.getElementById('preview-slides-track');
+      const w = track.clientWidth || 1;
+      const current = Math.round(track.scrollLeft / w);
+      const next = (current + delta + activePreviewSlidesCount) % activePreviewSlidesCount;
+      scrollToPreviewSlide(next);
+    }
+
+    function closeModal(modalId) {
+      const modal = document.getElementById(modalId);
+      if (!modal) return;
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.style.overflow = '';
+    }
+
+    function handleBackdropClick(event, modalId) {
+      if (event.target.id === modalId) {
+        closeModal(modalId);
+      }
+    }
+
+    let toastTimer = null;
+    function showToast(message) {
+      const toast = document.getElementById('toast-notification');
+      const msgEl = document.getElementById('toast-message');
+      msgEl.textContent = message;
+      toast.classList.remove('opacity-0', '-translate-y-3');
+      toast.classList.add('opacity-100', 'translate-y-0');
+
+      if (toastTimer) clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        toast.classList.remove('opacity-100', 'translate-y-0');
+        toast.classList.add('opacity-0', '-translate-y-3');
+      }, 2600);
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeModal('bank-modal');
+        closeModal('preview-modal');
+        closeModal('admin-editor-modal');
+        toggleMusicPopover(false);
+      }
+    });
+
+    function renderAllSections() {
+      renderBrandHeader();
+      renderHomeBanners();
+      renderContacts();
+      renderOtherLinks();
+      renderGroups();
+      renderGroups(true);
+      if (!document.getElementById('partners-detail-view').classList.contains('hidden')) {
+        if (SITE_DATA.partners[activePartnerIndex]) openPartnerCategories(activePartnerIndex, false);
+        else closeGroupDetailPage(true);
+      }
+      renderFonts();
+      renderBankAccounts();
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      renderAllSections();
+      setupFirstInteractionAutoplay();
+      startBannerAutoplay();
+      document.dispatchEvent(new CustomEvent('anntershop:ready', { detail: getWelcomePages() }));
+    }, { once: true });
+  </script>
 </body>
 </html>
